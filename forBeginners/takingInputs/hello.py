@@ -4,4 +4,4 @@
 # "Hello, " + user input. Don't print any additional messages!
 
 name = input()
-print("Hello, " + name)
+print("Hello,", name)
