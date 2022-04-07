@@ -7,4 +7,4 @@
 # My name is John
 
 my_name = 'Mouarf'
-print('My name is ' + my_name)
+print(f'My name is {my_name}')
