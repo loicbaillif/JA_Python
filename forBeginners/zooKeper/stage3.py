@@ -135,7 +135,7 @@ It looks like we will soon have more rabbits!"""
 # write your code here
 beginPhrase = "Please enter the number of the habitat you would like to view:"
 endPhrase1 = """---
-You've reached the end of the program. To check another habitat,""" 
+You've reached the end of the program. To check another habitat, """ 
 endPhrase2 = "please restart the watcher."
 listAnimals = [camel, lion, deer, goose, bat, rabbit]
 
