@@ -7,4 +7,3 @@
 alphabet = input()
 # put your python code here
 print(alphabet[14])
-print("abcdef"[2])
