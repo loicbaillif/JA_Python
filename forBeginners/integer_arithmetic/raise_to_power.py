@@ -4,5 +4,6 @@
 # It's time for really big numbers! Calculate this 2^{179} 
 # and print what you got
  
-result = 2**179
-print(result)
+number = 2
+power = 179
+print(number ** power)  # Avoid magical numbers
