@@ -5,5 +5,4 @@
 # and then get the remainder of the result's division by 20.
 
 a, b, c = 31, 331, 20
-
-print((a ** b) % 20)
+print((a ** b) % c)
