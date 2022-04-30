@@ -1,5 +1,5 @@
 # ****** Python for Beginners - Integer arithmetic ******
-# ****** Eercise : Calculate it ******
+# ****** Exercise : Calculate it ******
 
 # Print the result of executing the following expression: 
 # multiply 1234567890 by 987654321, then add 67890
