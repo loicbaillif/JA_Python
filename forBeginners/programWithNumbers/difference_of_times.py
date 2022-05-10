@@ -11,13 +11,13 @@
 # event, and the rest three integers define similarly the second event. 
 # Print the number of seconds between these two moments of time.
 
-from_hours = int(input())
-from_minutes = int(input())
-from_seconds = int(input())
-to_hours = int(input())
-to_minutes = int(input())
-to_seconds = int(input())
+from_hours = int(input("Time you get out? (hours)"))
+from_minutes = int(input("Time you get out? (minutes)"))
+from_seconds = int(input("Time you get out? (seconds)"))
+to_hours = int(input("Time you get back? (hours)"))
+to_minutes = int(input("Time you get back? (minutes)"))
+to_seconds = int(input("Time you get back? (seconds)"))
 
 print(((to_hours - from_hours) * 60 + 
         to_minutes - from_minutes) * 60 + 
-        to_seconds - from_seconds)
+        to_seconds - from_seconds)  # Horner's method
