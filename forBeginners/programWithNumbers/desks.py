@@ -17,9 +17,10 @@
 #       minimum number of desks to buy, so there should be as many as possible 
 #       desks taken by two students rather than one.
 
-classroom1 = int(input())
-classroom2 = int(input())
-classroom3 = int(input())
+classroom1 = int(input("How many students in first classroom?"))
+classroom2 = int(input("How many students in second classroom?"))
+classroom3 = int(input("How many students in third classroom?"))
 
-print(classroom1 // 2 + classroom1 % 2 + classroom2 // 2 + classroom2 % 2 
-+ classroom3 // 2 + classroom3 % 2)
+print(classroom1 // 2 + classroom1 % 2 
+      + classroom2 // 2 + classroom2 % 2 
+      + classroom3 // 2 + classroom3 % 2)
