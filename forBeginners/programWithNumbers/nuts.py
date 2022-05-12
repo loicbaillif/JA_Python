@@ -8,3 +8,8 @@
 # Input data format 
 # There are two positive integers N and K, neither of them 
 # is greater than 10000.
+
+squirrels = int(input())
+nuts = int(input())
+
+print(nuts % squirrels)
