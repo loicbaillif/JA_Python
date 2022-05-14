@@ -18,5 +18,5 @@ food_per_day = int(input("Total food cost per day?\n"))
 one_way_flight = int(input("One-way flight cost?\n"))
 one_night_cost = int(input("How much for one night in a hotel?\n"))
 
-print((duration_in_days - 1) * (food_per_day + one_night_cost) + 
-one_way_flight * 2 + food_per_day)
+print((duration_in_days - 1) * (food_per_day + one_night_cost) 
+      + one_way_flight * 2 + food_per_day)
