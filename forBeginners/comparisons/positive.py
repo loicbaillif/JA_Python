@@ -8,5 +8,4 @@
 # A comparison already returns a boolean, so if you need the result of the 
 # comparison, you can print it, like this print(5 > 9) # False
 
-user_input = int(input("Please enter an integer value\n\t"))
-print(user_input > 0)
+print(int(input("Please enter an integer value:\n-> ")) > 0)
