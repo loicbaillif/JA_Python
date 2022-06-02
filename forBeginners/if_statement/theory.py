@@ -2,7 +2,7 @@
 #  ****** IF statement ******
 
 print(" JetBrains Academy - Python for Beginners ".center(80, "*"))
-print(" IF statement ".center(80, "*"))
+print(" IF statement: Theory ".center(80, "*"))
 print("_"*40+"\n\n")
 print(" 1) Simple IF statement ".center(60, "#"))
 # Indentation is all we need to identify blocks:
