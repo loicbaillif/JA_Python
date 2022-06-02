@@ -16,4 +16,15 @@ ratatouille = "aubergine, carrot, onion, tomato, garlic, olive oil, pepper, salt
 chocolate_cake = "chocolate, sugar, salt, flour, coffee, butter"
 omelette = "egg, milk, bacon, tomato, salt, pepper"
 
+user_input = input()
 
+if user_input in pasta:
+    print("pasta time!")
+if user_input in apple_pie:
+    print("apple pie time!")
+if user_input in ratatouille:
+    print("ratatouille time!")
+if user_input in chocolate_cake:
+    print("chocolate cake time!")
+if user_input in omelette:
+    print("omelette time!")
