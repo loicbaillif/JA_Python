@@ -14,7 +14,7 @@ user_input = int(input())  # Needed for first input
 while user_input != final_number:
     nb_inputs += 1
     sum_inputs += user_input    
-    user_input = int(input())
+    user_input = int(input())  # Important to put this as last line
 
 print(nb_inputs)
 print(sum_inputs)
