@@ -11,3 +11,9 @@ while number < 5:
     number += 1
 print("Loop is complete, number = " + str(number))
 
+print("_"*30+"\n")
+print(" 2) Infinite while loop ".center(60, "#"))
+# Besides having it as a bug, it may be relevant in some cases (?)
+# while True:
+#     print("Neverending story")
+
