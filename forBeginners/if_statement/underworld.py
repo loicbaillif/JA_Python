@@ -17,3 +17,9 @@ print(separator.center(80)+"\n\n")
 #
 # In conclusion, let's warn everyone in the underworld (both those in the boat 
 # and those overboard) by printing the message There is no turning back.
+
+coin = bool(int(input()))
+if coin:
+    print("Welcome to Charon's boat!")
+
+print("There is no turning back.")
