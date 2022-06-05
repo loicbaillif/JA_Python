@@ -12,7 +12,7 @@ stanford = "biology, classics, geophysics, music"
 arts = "linguistics, fine arts, classics, music"
 sciences = "physics, programming, biology, geophysics"
 
-major = "..."  # What if major = "biology"?
+major = "biology"  # What if major = "biology"?
 if major in harvard:
     if major in arts:
         print("This is an arts program at Harvard")
@@ -23,3 +23,5 @@ if major in stanford:
         print("This is an arts program at Stanford")
     if major in sciences:
         print("This is a sciences program at Stanford")  # output
+
+# Tested and validated.
