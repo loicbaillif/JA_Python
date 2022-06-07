@@ -18,6 +18,6 @@ print(separator.center(80)+"\n")
 
 max_number = int(input("Please enter an integer inferior to 200"))
 output = 2
-while (output < max_number):
+while output < max_number:
     print(output)
     output += 2
