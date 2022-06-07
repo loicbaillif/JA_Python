@@ -16,7 +16,7 @@ print(" JetBrains Academy - Python for Beginners ".center(80, "*"))
 print(" While loop: Exercise - Find even".center(80, "*"))
 print(separator.center(80)+"\n")
 
-max_number = int(input())
+max_number = int(input("Please enter an integer inferior to 200"))
 output = 2
 while (output < max_number):
     print(output)
