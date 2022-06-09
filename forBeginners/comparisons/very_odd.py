@@ -17,3 +17,4 @@ print(separator.center(80)+"\n")
 
 a_input = int(input())
 b_input = int(input())
+print(a_input / b_input % 2 == 1)
