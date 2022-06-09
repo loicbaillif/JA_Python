@@ -15,6 +15,4 @@ print(separator.center(80)+"\n")
 # The output format:
 #   True or False
 
-a_input = int(input("Please provide number A:\n"))
-b_input = int(input("Please provide number B:\n"))
-print(a_input / b_input % 2 == 1)
+print(int(input()) / int(input()) % 2 == 1)
