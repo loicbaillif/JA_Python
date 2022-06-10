@@ -129,12 +129,16 @@ It looks like we will soon have more rabbits!"""
 
 
 # write your code here
-beginPhrase = "Please enter the number of the habitat you would like to view:"
-endPhrase1 = """---
-You've reached the end of the program. To check another habitat, """ 
-endPhrase2 = "please restart the watcher."
-listAnimals = [camel, lion, deer, goose, bat, rabbit]
+exit_word = "exit"
+begin_phrase = ("Please enter the number of the habitat " 
+"you would like to view:\n")
+end_phrase = "See you later!"
+list_animals = [camel, lion, deer, goose, bat, rabbit]
+user_input = input(begin_phrase)
 
-userChoice = int(input(beginPhrase))
-print(listAnimals[userChoice])
-print(endPhrase1 + endPhrase2)
+while user_input != exit_word:
+    print(list_animals[int(user_input)])
+    user_input = input(begin_phrase)
+
+print(end_phrase)
+
