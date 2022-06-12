@@ -15,3 +15,6 @@ print(separator.center(80)+"\n")
 #   I was created in {birth_year}.
 # Instead of {bot_name}, print any name you choose and replace {birth_year} 
 # with the current year (four digits).
+
+print("Hello! my name is Ro.")
+print("I was created in 2000.")
