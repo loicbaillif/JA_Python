@@ -10,6 +10,7 @@ print(separator.center(80)+"\n")
 # from 1 to 20 (including), but there are some mistakes. Find and fix them.
 
 i = 1
-while i <= 20:    # Correct the comparison sign : <= instead of >
+upper_limit = 20  # Create a variable to avoid magic number. #GoodPractice :D
+while i <= upper_limit:   # Correct the comparison sign : <= instead of >
     print(i * i)  # Program supposed to print  the squares : i * i instead of i
     i += 1        # Crucial: increment loop variable, or infinite loop
