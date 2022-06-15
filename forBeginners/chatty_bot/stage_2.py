@@ -21,3 +21,8 @@ print(separator.center(80)+"\n")
 #   Please, remind me your name.
 #   What a great name you have, {your_name}!
 
+print("Hello! my name is Ro.")
+print("I was created in 2000.")
+print("Please, remind me your name.")
+user_name = input()
+print("What a great name you have, " + user_name + "!")
