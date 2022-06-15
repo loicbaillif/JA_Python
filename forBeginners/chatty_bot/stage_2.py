@@ -23,6 +23,5 @@ print(separator.center(80)+"\n")
 
 print("Hello! my name is Ro.")
 print("I was created in 2000.")
-print("Please, remind me your name.")
-user_name = input()
+user_name = input("Please, remind me your name.\n")
 print("What a great name you have, " + user_name + "!")
