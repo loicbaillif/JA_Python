@@ -9,9 +9,10 @@ print(separator.center(80)+"\n")
 # Carl asks you to count the sum of the first k natural numbers. 
 # Read k from the input, then add up numbers from 1 to k and print your answer.
 
-k_input = int(input())
+k_input = int(input("Please enter an integer number:\n> "))
 sum = 0
-while k_input > 0:
-    sum += k_input
-    k_input -= 1
-print(sum)
+i = 0
+while i <= k_input:
+    sum += i
+    i += 1
+print(f"The sum of the first {k_input} numbers is {sum}.")
