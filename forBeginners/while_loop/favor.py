@@ -10,9 +10,9 @@ print(separator.center(80)+"\n")
 # Read k from the input, then add up numbers from 1 to k and print your answer.
 
 k_input = int(input("Please enter an integer number:\n> "))
-sum = 0
+sum_first_k = 0
 i = 0
 while i <= k_input:
-    sum += i
+    sum_first_k += i
     i += 1
-print(f"The sum of the first {k_input} numbers is {sum}.")
+print(f"The sum of the first {k_input} numbers is {sum_first_k}.")
