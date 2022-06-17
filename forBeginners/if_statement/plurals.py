@@ -16,8 +16,8 @@ print(separator.center(80)+"\n")
 #
 # Words that form their plural not by adding s, will NOT appear in the tests.
 
-number = int(input())
-word = input()
+number = int(input("Please enter the quantity (number):\n> "))
+word = input("Please enter the word:\n> ")
 
 # write a condition for plurals
 singular = 1
