@@ -20,6 +20,8 @@ number = int(input())
 word = input()
 
 # write a condition for plurals
-
+singular = 1
+if number != singular:
+    word = word + "s"
 
 print(number, word)
