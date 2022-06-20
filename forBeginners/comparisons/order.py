@@ -14,4 +14,4 @@ input1 = int(input())
 input2 = int(input())
 input3 = int(input())
 
-print(input2 > input1 and input3 > input2)
+print(input2 > input1 and input3 > input2)  # Tested => OK
