@@ -10,8 +10,8 @@ print(separator.center(80)+"\n")
 # ascending order. The subsequent number must be greater than the 
 # previous one.
 
-input1 = input()
-input2 = input()
-input3 = input()
+input1 = input("Please enter first number:\n")
+input2 = input("Please enter second number:\n")
+input3 = input("Please enter third number:\n")
 
-print(input2 > input1 and input3 > input2)  # Tested => OK
+print(input1 < input2 < input3)  # Tested => OK
