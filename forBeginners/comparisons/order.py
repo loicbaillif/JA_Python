@@ -10,8 +10,8 @@ print(separator.center(80)+"\n")
 # ascending order. The subsequent number must be greater than the 
 # previous one.
 
-input1 = int(input())
-input2 = int(input())
-input3 = int(input())
+input1 = input()
+input2 = input()
+input3 = input()
 
 print(input2 > input1 and input3 > input2)  # Tested => OK
