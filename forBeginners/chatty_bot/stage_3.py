@@ -19,3 +19,14 @@ print(separator.center(80)+"\n")
 # result in the number itself. This perfectly fits the ordinary age range, 
 # doesn't it? Ask a user for the remainders and use them to guess the age!
 
+print("Hello! my name is Ro.")
+print("I was created in 2000.")
+user_name = input("Please, remind me your name.\n")
+print(f"What a great name you have, {user_name}!\nLet me guess your age.")
+print("Enter remainders of dividing your age by 3, 5 and 7.")
+remainder_3 = int(input())
+remainder_5 = int(input())
+remainder_7 = int(input())
+age = (remainder_3 * 70 + remainder_5 * 21 + remainder_7 * 15) % 105
+print(f"Your age is {age}; that's a good time to start programming")
+
