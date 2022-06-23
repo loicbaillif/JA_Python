@@ -17,3 +17,10 @@ print(separator.center(80)+"\n")
 #
 # The output format:
 #   The factorial N!.
+
+n_input = int(input())
+factorial_n = 1
+while n_input > 1:
+    factorial_n *= n_input
+    n_input -= 1
+print(factorial_n)
