@@ -18,7 +18,7 @@ print(separator.center(80)+"\n")
 # The output format:
 #   The factorial N!.
 
-n_input = int(input())
+n_input = int(input("Please enter a number between 0 and 100:\n> "))
 factorial_n = 1
 while n_input > 1:
     factorial_n *= n_input
