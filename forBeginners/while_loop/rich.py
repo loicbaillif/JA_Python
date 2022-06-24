@@ -22,11 +22,11 @@ print(separator.center(80)+"\n")
 # The output format:
 #   The number of years.
 
-deposit = int(input())
+deposit = int(input("What is the initial deposit value? (dollars)"))
 protected_value = 700000
 interest_rate = 1.071
 nb_years = 0
 while deposit < protected_value:
-    deposit = deposit * interest_rate
+    deposit *= interest_rate
     nb_years += 1
 print(nb_years)
