@@ -25,7 +25,7 @@ remainder_7 = int(input("Enter the remainder of dividing your age by 7:\n> "))
 age = (remainder_3 * 70 + remainder_5 * 21 + remainder_7 * 15) % 105
 print(f"Your age is {age}; that's a good time to start programming")
 print("Now I will prove to you that I can count to any number you want")
-max_count = int(input())
+max_count = int(input("> "))
 i = 0
 while i <= max_count:
     print(f"{i} !")
