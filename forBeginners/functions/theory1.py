@@ -20,3 +20,8 @@ print(f"int(number) = {integer} - float(number) = {float_number}")
 my_sum = sum((integer, float_number))
 print(f"sum((integer, float_number)) = {my_sum}")
 print(f"round(my_sum) = {round(my_sum)}")
+integer = 3
+float_number = 5.4
+my_sum = integer + float_number
+print(min(integer, float_number))
+print(type(max(integer, float_number, my_sum)))
