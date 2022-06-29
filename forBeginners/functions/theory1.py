@@ -17,3 +17,6 @@ print(f"number = \"1234\"\nlen(number) = {len(number)}")
 integer = int(number)           # 1234
 float_number = float(number)    # 1234.0
 print(f"int(number) = {integer} - float(number) = {float_number}")
+my_sum = sum((integer, float_number))
+print(f"sum((integer, float_number)) = {my_sum}")
+print(f"round(my_sum) = {round(my_sum)}")
