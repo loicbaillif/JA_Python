@@ -14,3 +14,6 @@ print("test\n")
 print(" 2) Built-in functions ".center(60, "*"))
 number = "1234"
 print(f"number = \"1234\"\nlen(number) = {len(number)}")
+integer = int(number)           # 1234
+float_number = float(number)    # 1234.0
+print(f"int(number) = {integer} - float(number) = {float_number}")
