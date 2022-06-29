@@ -8,3 +8,5 @@ print(" 1) Invoking print() ".center(60, "*"))
 print("Hello, World!")      # Invoking print() with 1 argument
 print()                     # Invoking print() with no argument
 print("Bye,", "then!")      # Invoking print() with 2 arguments
+print("Lorem", "Ipsum", "Dolor", "Sit", "Amet", sep=".", end="\n\t")
+print("test")
