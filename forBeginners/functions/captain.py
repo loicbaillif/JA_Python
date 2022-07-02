@@ -8,4 +8,6 @@ print(" " * 20 + "_" * 40 + " " * 20 +"\n\n")
 def captain_adder(name):
     print(f"captain {name}")
 
+captain_adder("Jack Sparrow")
+
 print(" " * 20 + "_" * 40 + " " * 20 +"\n\n")
