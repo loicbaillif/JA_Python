@@ -42,5 +42,18 @@ send_postcard("Mafate", "N'arvu")
 # Sending a postcard to Mafate
 # With the message: N'arvu
 
-send_postcard("Sesame Street")
+# send_postcard("Sesame Street")
 # Won't work - type error
+
+print()
+print(" Execution and return ".center(60, "*"))
+
+def celsius_to_fahrenheit(temp_c):
+    temp_f = temp_c * 9 / 5 +32
+    return temp_f
+
+# Examples:
+water_bp = celsius_to_fahrenheit(100)  # return value stored in variable
+print(f"Water boils at {water_bp} degrees Fahrenheit")
+nothing = print("We will rock you")  # print does not return anything 
+print(nothing)  # printing nothing gives "None"
