@@ -14,3 +14,9 @@ def multiply(x, y):
 
 print(multiply(3, 4))
 print(multiply(6, 3))
+
+def praise():
+    return "Of course you are the best!"
+
+print(praise())
+print(praise().center(50, "~"))
