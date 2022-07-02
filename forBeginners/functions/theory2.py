@@ -20,3 +20,9 @@ def praise():
 
 print(praise())
 print(praise().center(50, "~"))
+
+def give_up(random):
+    pass
+
+print(give_up(321))
+print(give_up("AZERTY"))
