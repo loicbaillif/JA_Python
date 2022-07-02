@@ -26,3 +26,21 @@ def give_up(random):
 
 print(give_up(321))
 print(give_up("AZERTY"))
+
+print()
+print(" Parameter VS Argument ".center(60, "*"))
+
+def send_postcard(address, message):
+    print("Sending a postcard to ", address)
+    print("With the message: ", message)
+
+send_postcard("Hilton, 97", "Hello, bro!")
+# Sending a postcard to Hilton, 97
+# With the message: Hello, bro!
+
+send_postcard("Mafate", "N'arvu")
+# Sending a postcard to Mafate
+# With the message: N'arvu
+
+send_postcard("Sesame Street")
+# Won't work - type error
