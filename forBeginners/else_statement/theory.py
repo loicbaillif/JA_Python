@@ -30,4 +30,10 @@ else:
         print("More than a hundred")
     print("We are still in the main 'else'")
 
+# Conclusion:
+print("Keyword 'else' provides an alternative")
+print("It will be executed in case 'if' statement is not")
+print("It does not require any condition")
+print("if / else statement can be nested")
+
 print("_"*40+"\n\n")
