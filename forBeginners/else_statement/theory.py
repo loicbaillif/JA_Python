@@ -13,4 +13,10 @@ if today == holiday:
 else:
     print("Keep your chin up, then.")
 
+# Second example, ternary operator:
+hour = 13
+sunrise = 7
+sunset = 19
+print("Day time!" if (hour >= sunrise and hour <= sunset) else "Night time!")
+
 print("_"*40+"\n\n")
