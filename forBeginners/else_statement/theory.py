@@ -19,4 +19,15 @@ sunrise = 7
 sunset = 19
 print("Day time!" if (hour >= sunrise and hour <= sunset) else "Night time!")
 
+# Nested if else:
+x_input = int(input("Please enter an integer"))
+if x_input < 100:
+    print("Less than a hundred")
+else: 
+    if x_input == 100:
+        print("Right on it!")
+    else:
+        print("More than a hundred")
+    print("We are still in the main 'else'")
+
 print("_"*40+"\n\n")
