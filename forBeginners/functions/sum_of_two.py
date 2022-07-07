@@ -7,4 +7,4 @@ print(("_"*40).center(80, " ") + "\n\n")
 
 x = int(input())
 y = int(input())
-print(sum(x, y))
+print(sum((x, y)))
