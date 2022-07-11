@@ -8,9 +8,7 @@ print(("_"*40).center(80, " ") + "\n\n")
 
 def closest_higher_mod_5(x):
     remainder = x % 5
-    if remainder == 0:
-        return x
-    return x + 5 - remainder
+    return x + 5 * (remainder != 0) - remainder
 
 print(closest_higher_mod_5(40))
 print(closest_higher_mod_5(43))
