@@ -11,3 +11,6 @@ def closest_higher_mod_5(x):
     if remainder == 0:
         return x
     return x + 5 - remainder
+
+print(closest_higher_mod_5(40))
+print(closest_higher_mod_5(43))
