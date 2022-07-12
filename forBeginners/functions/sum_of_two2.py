@@ -7,3 +7,7 @@ print(("_"*40).center(80, " ") + "\n\n")
 
 def get_sum(a, b):
     return a + b
+
+x = int(input())
+y = int(input())
+print(get_sum(x, y))
