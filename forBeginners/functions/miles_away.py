@@ -6,5 +6,5 @@ print(" Declaring a function - Exercise: Miles away ".center(80, "*"))
 print(("_"*40).center(80, " ") + "\n\n")
 
 km_per_mile = 1.609  # Create conversion variable to avoid magic number
-distance_miles = int(input())
-print(distance_miles * km_per_mile)
+distance_miles = int(input("Please enter the distance in miles:\n> "))
+print(f"{distance_miles} miles = {km_per_mile * distance_miles} km.")
