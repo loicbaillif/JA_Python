@@ -11,3 +11,9 @@ print("_"*40+"\n\n")
 # or if it is divisible by 400. So, 2000 is leap and 2100 isn't.
 #
 # Output either "Leap" or "Ordinary" depending on the input.
+
+year = int(input())
+if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+    print("Leap")
+else:
+    print("Ordinary")
