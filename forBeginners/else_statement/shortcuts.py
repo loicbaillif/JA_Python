@@ -12,7 +12,10 @@ print("_"*40+"\n\n")
 # Original:
 print("Have you had enough hours of sleep today?")
 answer = input()
-if answer == "yes":
-    print("Let's drink cocoa!")
-else:
-    print("I'd recommend a coffee!")
+# if answer == "yes":
+#     print("Let's drink cocoa!")
+# else:
+#     print("I'd recommend a coffee!")
+
+# Proposal
+print("Let's drink cocoa!" if answer == "yes" else "I'd recommend a coffee!")
