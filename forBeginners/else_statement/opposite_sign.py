@@ -7,3 +7,4 @@ print("_"*40+"\n\n")
 
 # Read an integer as input and print it with the opposite sign.
 
+print(int(input()) * (-1))
