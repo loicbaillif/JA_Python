@@ -12,8 +12,12 @@ print("_"*40+"\n\n")
 #
 # Output either "Leap" or "Ordinary" depending on the input.
 
+def divisible(x, y):
+    # returns true if x is divisible by y, false elsewhere
+    return x % y == 0
+
 year = int(input())
-if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+if (divisible(year, 4) and not divisible(year, 100)) or divisible(year, 400):
     print("Leap")
 else:
     print("Ordinary")
