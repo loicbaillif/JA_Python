@@ -16,8 +16,9 @@ def divisible(x, y):
     # returns true if x is divisible by y, false elsewhere
     return x % y == 0
 
-year = int(input())
+
+year = int(input("Please enter a year:\n> "))
 if (divisible(year, 4) and not divisible(year, 100)) or divisible(year, 400):
-    print("Leap")
+    print(f"{year} is leap.")
 else:
-    print("Ordinary")
+    print(f"{year} is ordinary.")
