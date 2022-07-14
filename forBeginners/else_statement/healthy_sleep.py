@@ -4,3 +4,14 @@
 print(" JetBrains Academy - Python for Beginners ".center(80, "*"))
 print(" else statement: Exercise - Healthy Sleep ".center(80, "*"))
 print("_"*40+"\n\n")
+
+a = int(input())
+b = int(input())
+h = int(input())
+
+if h < a:
+    print("Deficiency")
+elif h > b:
+    print("Excess")
+else:
+    print("Normal")
