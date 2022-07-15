@@ -9,9 +9,9 @@ print("_"*40+"\n\n")
 # they form a triangle. Print the answer in the following format: 
 #   "The triangle is valid!" or "The triangle is not valid!".
 
-a = int(input())
-b = int(input())
-c = int(input())
+a = int(input("Please enter the first angle for the triangle:\n> "))
+b = int(input("Please enter the second angle for the triangle:\n> "))
+c = int(input("Please enter the third angle for the triangle:\n> "))
 sum_angles = 180  # Avoid using magic numbers
 valid = "" if a + b + c == sum_angles else "not "
 print(f"The triangle is {valid}valid!")  # Refactor the output
