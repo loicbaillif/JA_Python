@@ -38,4 +38,17 @@ i = 0
 while i <= max_count:
     print(f"{i} !")
     i += 1
-print("Completed, have a nice day!")
+
+# Beginning of Stage 5
+print("Let's test your programming knowledge.\nWhy do we use methods?")
+print("1. To repeat a statement multiple times.")
+print("2. To decompose a program into several small subroutines.")
+print("3. To determine the execution time of a program.")
+print("4. To interrupt the execution of a program.")
+answer = int(input())
+while answer != 2:
+    print("Please, try again.")
+    answer = int(input())
+# End of Stage 5
+
+print("Congratulations, have a nice day!")
