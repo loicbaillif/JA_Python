@@ -8,3 +8,10 @@ print("_"*40+"\n\n")
 # Read three angles given on separate input lines and check whether 
 # they form a triangle. Print the answer in the following format: 
 #   "The triangle is valid!" or "The triangle is not valid!".
+
+a = int(input())
+b = int(input())
+c = int(input())
+sum_angles = 180
+print("The triangle is valid!" if a + b + c == sum_angles 
+    else "The triangle is not valid!" )
