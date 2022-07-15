@@ -12,6 +12,6 @@ print("_"*40+"\n\n")
 a = int(input())
 b = int(input())
 c = int(input())
-sum_angles = 180
-print("The triangle is valid!" if a + b + c == sum_angles 
-    else "The triangle is not valid!" )
+sum_angles = 180  # Avoid using magic numbers
+valid = "" if a + b + c == sum_angles else "not "
+print(f"The triangle is {valid}valid!")  # Refactor the output
