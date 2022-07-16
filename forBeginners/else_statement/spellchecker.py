@@ -18,9 +18,6 @@ print("_"*40+"\n\n")
 dictionary = ["aa", "abab", "aac", "ba", "bac", "baba", "cac", "caac"]
 
 user_input = input()
-if user_input in dictionary:
-    print("Correct")
-else:
-    print("Incorrect")
 
-
+answer_tupel = ("Incorrect", "Correct")
+print(answer_tupel[user_input in dictionary])
