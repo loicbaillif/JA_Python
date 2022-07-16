@@ -69,7 +69,18 @@ def outer_z():
 outer_z()  # --> global
 
 
+print("\n***** Keywords \"nonlocal\" and \"global\"")
+x = 1
+def print_global():
+    print(x)
 
+print_global()  # --> 1
+
+def modify_global():
+    print(x)
+    #  x = x + 1 --> This causes an UnboundLocalError
+
+modify_global()
 
 
 print("_"*40+"\n\n")
