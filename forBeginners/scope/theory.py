@@ -26,6 +26,24 @@ def local_printer():
 local_printer()  # --> "Yesterday"
 # print(local_phrase)  # Impossible, causes NameError
 
+print("\n***** LEGB rule")
+print("Python interpreter will look for variables in following order:")
+print("Local --> Enclosing --> Global --> Built-in")
+
+print("*** Example 1:")
+x = "global"
+def outer_x():
+    x = "outer local"
+    def inner_x():
+        x = "inner local"
+        def func_x():
+            x = "func local"
+            print(x)
+        func_x()
+    inner_x()
+
+outer_x()  # --> "func local"
+
 
 
 print("_"*40+"\n\n")
