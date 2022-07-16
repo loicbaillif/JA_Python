@@ -19,5 +19,5 @@ dictionary = ["aa", "abab", "aac", "ba", "bac", "baba", "cac", "caac"]
 
 user_input = input()
 
-answer_tupel = ("Incorrect", "Correct")
-print(answer_tupel[user_input in dictionary])
+answer_tuple = ("Incorrect", "Correct")
+print(answer_tuple[user_input in dictionary])
