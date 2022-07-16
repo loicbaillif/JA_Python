@@ -70,6 +70,8 @@ outer_z()  # --> global
 
 
 print("\n***** Keywords \"nonlocal\" and \"global\"")
+print("1) global")
+print("*** Example 1:")
 x = 1
 def print_global():
     print(x)
@@ -81,6 +83,40 @@ def modify_global():
     #  x = x + 1 --> This causes an UnboundLocalError
 
 modify_global()
+
+print("*** Example 2:")
+y = 1
+def modify_global_y():
+    global y
+    print(y)
+    y = y + 1
+modify_global_y()
+modify_global_y()
+modify_global_y()
+
+print("2) nonlocal")
+def func():
+    x = 1
+    def inner():
+        x = 2
+        print("inner:", x)
+    inner()
+    print("outer:", x)
+
+def nonlocal_func():
+    x = 1
+    def inner():
+        nonlocal x
+        x = 2
+        print("inner:", x)
+    inner()
+    print("outer:", x)
+
+func()  # inner: 2
+        # outer: 1
+
+nonlocal_func()  # inner: 2
+                 # outer: 2
 
 
 print("_"*40+"\n\n")
