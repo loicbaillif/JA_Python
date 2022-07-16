@@ -57,5 +57,19 @@ def outer_y():
 
 outer_y()  # --> inner_local
 
+print("*** Example 3:")
+z = "global"
+def outer_z():
+    def inner_z():
+        def func_z():
+            print(z)
+        func_z()
+    inner_z()
+
+outer_z()  # --> global
+
+
+
+
 
 print("_"*40+"\n\n")
