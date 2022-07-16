@@ -13,6 +13,7 @@ print("_"*40+"\n\n")
 # Please, don't change the rest of the code.
 
 def change_city(new_user_city):
+    global user_city
     user_city = new_user_city
 
 change_city("Paris")
