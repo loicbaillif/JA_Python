@@ -29,8 +29,5 @@ first_month = 'Month 1: repaid 250'
 second_month = 'Month 2: repaid 250'
 third_month = 'Month 3: repaid 500'
 
-print(loan_principal)
-print(first_month)
-print(second_month)
-print(third_month)
-print(final_output)
+print(loan_principal, first_month, second_month, third_month, 
+final_output, sep="\n")
