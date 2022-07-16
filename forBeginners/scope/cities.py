@@ -2,7 +2,7 @@
 #  ****** Scope: Exercise - Cities ******
 
 print(" JetBrains Academy - Python for Beginners ".center(80, "*"))
-print(" Scope: Theory ".center(80, "*"))
+print(" Scope: Exercise - Cities ".center(80, "*"))
 print("_"*40+"\n\n")
 
 # Imagine you've created a program that plays the cities game with a user. 
