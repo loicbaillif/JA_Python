@@ -44,6 +44,18 @@ def outer_x():
 
 outer_x()  # --> "func local"
 
+print("*** Example 2:")
+y = "global"
+def outer_y():
+    y = "outer local"
+    def inner_y():
+        y = "inner local"
+        def func_y():
+            print(y)
+        func_y()
+    inner_y()
+
+outer_y()  # --> inner_local
 
 
 print("_"*40+"\n\n")
