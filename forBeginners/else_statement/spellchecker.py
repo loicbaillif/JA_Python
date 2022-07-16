@@ -17,7 +17,7 @@ print("_"*40+"\n\n")
 
 dictionary = ["aa", "abab", "aac", "ba", "bac", "baba", "cac", "caac"]
 
-user_input = input()
+user_input = input("Please enter a word, its spelling will be checked:\n> ")
 
 answer_tuple = ("Incorrect", "Correct")
 print(answer_tuple[user_input in dictionary])
