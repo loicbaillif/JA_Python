@@ -28,3 +28,7 @@ print("math.e = " + str(math.e))
 print(digits)
 # Here-after: print a random item from the list
 print(choice(["red", "yellow", "blue", "green"]))  
+
+print_subtitle("Summary")
+# Remember to use this as much as possible, to keep code readable.
+# Split functions and algorithms into dedicated files
