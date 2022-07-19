@@ -1,7 +1,7 @@
 #  ******** JetBrains Academy - Python for Beginners ********
 #  ****** Load Module: Theory ******
 
-print(" JetBrains Academy - Python for Beginners ".center(80, "*"))
-print(" Load Module: Theory ".center(80, "*"))
-print("_"*40+"\n\n")
+import print_title
 
+print_title.print_title("JetBrains Academy - Python for Beginners")
+print_title.print_title("Load Module")
