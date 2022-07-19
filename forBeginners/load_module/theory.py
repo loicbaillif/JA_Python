@@ -3,6 +3,7 @@
 
 # Standard library imports
 import math 
+from random import choice
 from string import digits
 
 # Local application imports
@@ -25,3 +26,5 @@ print("math.log(10) = " + str(math.log(10)))
 print("math.pi = " + str(math.pi))
 print("math.e = " + str(math.e))
 print(digits)
+# Here-after: print a random item from the list
+print(choice(["red", "yellow", "blue", "green"]))  
