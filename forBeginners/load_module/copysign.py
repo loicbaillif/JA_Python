@@ -16,6 +16,6 @@ print_title("JetBrains Academy - Python for Beginners")
 print_title("Load Module - Exercise")
 print_subtitle("Copysign")
 
-x = int(input())
-y = int(input())
+x = int(input("Please enter x value:\n> "))
+y = int(input("Please enter y value:\n "))
 print(copysign(x, y))
