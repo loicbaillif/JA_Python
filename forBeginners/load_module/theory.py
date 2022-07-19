@@ -3,6 +3,7 @@
 
 # Standard library imports
 import math 
+from string import digits
 
 # Local application imports
 from print_title import print_title
@@ -23,3 +24,4 @@ print("math.factorial(6) = " + str(math.factorial(6)))  # 720
 print("math.log(10) = " + str(math.log(10)))
 print("math.pi = " + str(math.pi))
 print("math.e = " + str(math.e))
+print(digits)
