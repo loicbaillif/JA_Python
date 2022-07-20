@@ -25,7 +25,7 @@ from print_title import print_subtitle
 print_title("Jet Brains Academy - Python for Beginners")
 print_subtitle("Load Module: Exercise - Not exactly random")
 
-n = int(input())
+n = int(input("Please enter the int number to be used as seed:\n> "))
+bound = 100
 seed(n)
-for i in range(20):
-    print(randint(-100, 100))
+print(randint(-bound, bound))
