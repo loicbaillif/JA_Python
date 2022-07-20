@@ -35,3 +35,17 @@ elif light == "red":
     print("Just wait.")
 else:
     print("No such traffic light colour. Do as you please.")
+
+print_subtitle("Nested elif")
+# rewrite here-above example:
+traffic_lights = "green, orange, red"
+if light in traffic_lights:
+    if light == "green":
+        print("You can go.")
+    elif light == "orange":
+        print("You should brake now...")
+    else:
+        # can only be red here ...
+        print("Just wait")
+else:
+    print("No such traffic light colour. Do as you please.")
