@@ -49,3 +49,7 @@ if light in traffic_lights:
         print("Just wait")
 else:
     print("No such traffic light colour. Do as you please.")
+
+print_subtitle("Summary")
+print("Even though we know only basic if ... elif ... else structure, ")
+print("this is sufficient to create quite complex and complete programs.")
