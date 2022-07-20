@@ -27,4 +27,5 @@ print_subtitle("Load Module: Exercise - Not exactly random")
 
 n = int(input())
 seed(n)
-print(randint(-100, 100))
+for i in range(20):
+    print(randint(-100, 100))
