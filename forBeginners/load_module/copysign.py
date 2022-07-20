@@ -6,9 +6,9 @@
 
 
 # Standard Library imports
+from math import copysign
 
 # Local application imports
-from math import copysign
 from print_title import print_title
 from print_title import print_subtitle
 
