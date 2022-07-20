@@ -16,3 +16,11 @@ elif price > 500:
     print("I can afford that.")
 else:
     print("Not expansive enough, my son!")
+
+print_subtitle("Second example")
+pet = "dog"  # or "cat"?
+# cats VS dogs solved for good:
+if pet == "cat":
+    print("Oh, you are a cat person. Meow!")
+elif pet == "dog":
+    print("Oh you are a dog person. Woof!")
