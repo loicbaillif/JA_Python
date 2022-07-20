@@ -26,3 +26,5 @@ print_title("Jet Brains Academy - Python for Beginners")
 print_subtitle("Load Module: Exercise - Not exactly random")
 
 n = int(input())
+seed(n)
+print(randint(-100, 100))
