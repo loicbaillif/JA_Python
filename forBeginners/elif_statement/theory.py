@@ -24,3 +24,14 @@ if pet == "cat":
     print("Oh, you are a cat person. Meow!")
 elif pet == "dog":
     print("Oh you are a dog person. Woof!")
+
+print_subtitle("Multiple elifs and a decision tree")
+light = "red"
+if light == "green":
+    print("You can go.")
+elif light == "orange":
+    print("You should brake now...")
+elif light == "red":
+    print("Just wait.")
+else:
+    print("No such traffic light colour. Do as you please.")
