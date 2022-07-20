@@ -15,5 +15,5 @@ from print_title import print_subtitle
 print_title("Jet Brains Academy - Python for Beginners")
 print_subtitle("Load Module: Exercise - Capitalize All Words")
 
-input_string = input()
+input_string = input("Please enter a sentence, all words will be capitalized")
 print(capwords(input_string))
