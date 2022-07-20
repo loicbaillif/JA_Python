@@ -1,5 +1,5 @@
 #  ******** JetBrains Academy - Python for Beginners ********
-#  ****** Load Module: Exercise - Copysign ******
+#  ****** Load Module: Exercise - Not exactly random ******
 
 
 # Python can generate random numbers using the random module. To do that, 
@@ -13,3 +13,16 @@
 # 
 # Use the seed and randint functions from the random module. The former takes 
 # one number and the latter takes two numbers that represent the range.
+
+ # Standard library imports
+from random import randint
+from random import seed
+
+# Local application imports
+from print_title import print_title
+from print_title import print_subtitle
+
+print_title("Jet Brains Academy - Python for Beginners")
+print_subtitle("Load Module: Exercise - Not exactly random")
+
+n = int(input())
