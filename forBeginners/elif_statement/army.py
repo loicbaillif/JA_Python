@@ -2,7 +2,8 @@
 #  ****** elif statement: Exercise - The army of units ******
 
 # In a computer game, each gamer has an army of units.
-# Write a program that will classify the army of your enemies corresponding to the following rules:
+# Write a program that will classify the army of your enemies corresponding 
+# to the following rules:
 #   Units: Category
 #       . less than 1: no army
 #       . from 1 to 9: few
@@ -18,3 +19,17 @@ from print_title import print_subtitle
 
 print_title("JetBrains Academy - Python for Beginners")
 print_title("elif statement: Exercise - The army of units")
+
+number_units = int(input())
+if number_units < 1:
+    print("no army")
+elif number_units < 10:
+    print("few")
+elif number_units < 50:
+    print("pack")
+elif number_units < 500:
+    print("horde")
+elif number_units < 1000:
+    print("swarm")
+else:
+    print("legion")
