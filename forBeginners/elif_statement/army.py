@@ -23,7 +23,7 @@ print_title("elif statement: Exercise - The army of units")
 pack = 50
 horde = 500
 
-number_units = int(input())
+number_units = int(input("Please enter the number of units"))
 if number_units < pack:
     if number_units < 1:
         print("no army")
