@@ -20,23 +20,21 @@ from print_title import print_subtitle
 print_title("JetBrains Academy - Python for Beginners")
 print_title("elif statement: Exercise - The army of units")
 
-# number_units = int(input())
-def unit_size(number_units):
+pack = 50
+horde = 500
+
+number_units = int(input())
+if number_units < pack:
     if number_units < 1:
-        print(f"{number_units} --> no army")
+        print("no army")
     elif number_units < 10:
-        print(f"{number_units} --> few")
-    elif number_units < 50:
-        print(f"{number_units} --> pack")
-    elif number_units < 500:
-        print(f"{number_units} --> horde")
-    elif number_units < 1000:
-        print(f"{number_units} --> swarm")
+        print("few")
     else:
-        print(f"{number_units} --> legion")
-
-
-
-test_list = (0, 1, 9, 10, 11, 49, 50, 51, 499, 500, 501, 999, 1000, 2000)
-for elt in test_list:
-    unit_size(elt)
+        print("pack")
+else:
+    if number_units < horde:
+        print("horde")
+    elif number_units < 1000:
+        print("swarm")
+    else: 
+        print("legion")
