@@ -14,7 +14,7 @@ from print_title import print_subtitle
 print_title("JetBrains Academy - Python for Beginners")
 print_title("elif statement: Exercise - Negative, Positive or Zero")
 
-user_input = int(input())
+user_input = int(input("Please enter a number:\n> "))
 if user_input < 0:
     print("negative")
 elif user_input > 0:
