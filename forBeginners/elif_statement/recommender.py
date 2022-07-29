@@ -21,3 +21,17 @@ from print_title import print_title
 
 print_title("JetBrains Academy - Python for Beginners")
 print_title("elif statement: Exercise - Recommender")
+
+user_age = int(input())
+if user_age <= 16:
+    recommendation = "Lion King"
+elif user_age <= 25:
+    recommendation = "Trainspotting"
+elif user_age <= 40:
+    recommendation = "Matrix"
+elif user_age <= 60:
+    recommendation = "Pulp Fiction"
+else:
+    recommendation = "Breakfast at Tiffany's"
+
+print(recommendation)
