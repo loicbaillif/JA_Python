@@ -27,16 +27,17 @@ age_lion = 16
 age_trainspotting = 25
 age_matrix = 40
 age_pulp = 60
+recommendation = "Breakfast at Tiffany's"
 
-if user_age <= age_lion:
-    recommendation = "Lion King"
-elif user_age <= age_trainspotting:
-    recommendation = "Trainspotting"
-elif user_age <= age_matrix:
-    recommendation = "Matrix"
+if user_age <= age_trainspotting:
+    if user_age <= age_lion:
+        recommendation = "Lion King"
+    else: 
+        recommendation = "Trainspotting"
 elif user_age <= age_pulp:
-    recommendation = "Pulp Fiction"
-else:
-    recommendation = "Breakfast at Tiffany's"
+    if user_age <= age_matrix:
+        recommendation = "Matrix"
+    else:
+        recommendation = "Pulp Fiction"
 
 print("You should watch ", recommendation)
