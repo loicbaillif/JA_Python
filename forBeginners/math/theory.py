@@ -85,4 +85,14 @@ print("\tmath.sin(math.radians(60)) =", round(aSin, 2), "(sqrt(3)/2) ==> aSin")
 print("aCos² + aSin² = ...", 
     math.pow(math.cos(math.radians(60)), 2) 
     + math.pow(math.sin(math.radians(60)), 2))
-print("CQFD.")
+print("CQFD.\n")
+
+
+print_subtitle("Volume of a cylinder")
+print("Let's consider a standard soda can. Its dimensions are:")
+print("\tdiameter = 66mm\n\theight = 115mm")
+can_diam = 66
+can_height = 115
+can_volume = round(math.pi * math.pow(can_diam/2, 2) * can_height, 2)
+print("Volume for a standard can is:", can_volume, "cubic mm")
+print("or", round(can_volume / 1000, 2), "cubic cm")
