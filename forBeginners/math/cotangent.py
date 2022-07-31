@@ -19,8 +19,8 @@ def cotangent(a):
     a_rad = radians(a)
     return round(cos(a_rad) / sin(a_rad), 10)
 
-angle_degrees = int(input())
-print(cotangent(angle_degrees))
+angle_degrees = float(input("Enter the angle value (degrees):\n> "))
+print("cotan(", angle_degrees, "°) = ", cotangent(angle_degrees), sep='')
 
 
 print_title("End of exercise")
