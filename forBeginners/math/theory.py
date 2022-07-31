@@ -1,6 +1,9 @@
 #  ******** JetBrains Academy - Python for Beginners ********
 #  ****** Math functions: Theory ******
 
+# Global Python import
+import math
+
 # Local application imports
 from print_title import print_title
 from print_title import print_subtitle
@@ -25,3 +28,15 @@ print("round(", float1, ", 4) = ", round(float1, 4), sep='')
 print("\n***** Power: pow(x, y)")
 print("pow(2, 10) =", pow(2, 10))
 print("pow(2.0, 10) =", pow(2.0, 10))
+
+print("\n***** Minimum and Maximum: min() max()")
+print("min(1, 3, 5, 7, 9) =", min(1, 3, 5, 7, 9))
+print("max(1, 3, 5, 7, 9) =", max(1, 3, 5, 7, 9))
+
+print("\n***** math.fabs() and math.pow()")
+print("math.fabs() is an equivalent to standard abs(), and ")
+print("math.pow() is an equivalent to standard pow(), except ")
+print("they will always return a float value")
+print("math.fabs(", integer1, ") = ", math.fabs(integer1), sep='')
+print("math.pow(2, 10) =", math.pow(2, 10))
+
