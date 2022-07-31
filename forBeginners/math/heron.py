@@ -10,11 +10,16 @@ from print_title import print_title
 print_title("JetBrains Academy - Python for Beginners")
 print_title("Math functions - Exercise: Heron's Formula")
 
+# uses Heron's formula to return the area of a triangle, given its 3 sides 
+def semi_perimeter(a, b, c):
+    p = (a + b + c) / 2
+    return math.sqrt(p * (p - a) * (p - b) * (p - c))
+
+
 a = int(input())
 b = int(input())
 c = int(input())
-p = (a + b + c) / 2
-print(math.sqrt(p * (p - a) * (p - b) * (p - c)))
+print(semi_perimeter(a, b, c))
 
 
 print_title("End of exercise")
