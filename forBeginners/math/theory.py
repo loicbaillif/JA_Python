@@ -98,4 +98,4 @@ print("Volume for a standard can is:", can_volume, "cubic mm")
 print("or", round(can_volume / 1000, 2), "cubic cm")
 
 
-print_subtitle("End of chapter")
+print_title("End of chapter")
