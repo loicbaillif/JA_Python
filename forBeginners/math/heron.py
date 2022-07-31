@@ -16,9 +16,9 @@ def semi_perimeter(a, b, c):
     return math.sqrt(p * (p - a) * (p - b) * (p - c))
 
 
-a = int(input())
-b = int(input())
-c = int(input())
+a = int(input("Please enter the length of the first side: \n> "))
+b = int(input("Please enter the length of the second side: \n> "))
+c = int(input("Please enter the length of the third side: \n> "))
 print(semi_perimeter(a, b, c))
 
 
