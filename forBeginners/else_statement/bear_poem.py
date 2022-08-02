@@ -19,14 +19,17 @@ from print_title import print_title
 print_title("JetBrains Academy - Python for Beginners")
 print_title("Else Statement - Exercise: The bear poem")
 
-nb_bears = int(input())
-i = 0
-poem1 = "little bear\nWondering what to do"
-poem2 = "Along came another\nThen there were"
+nb_bears = int(input("What is the maximum number of bears\n> "))
+poem1 = " little bear"
+poem2 = "Wondering what to do"
+poem3 = "Along came another"
+poem4 = "Then there were"
 
-for i in range(nb_bears):
-    print(i + 1, poem1)
-    print(poem2, i + 2)
+for i in range(1, nb_bears):
+    print(i, poem1, '' if i == 1 else 's', sep='')
+    print(poem2)
+    print(poem3)
+    print(poem4, i + 1)
 
 
 
