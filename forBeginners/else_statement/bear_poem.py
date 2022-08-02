@@ -19,5 +19,15 @@ from print_title import print_title
 print_title("JetBrains Academy - Python for Beginners")
 print_title("Else Statement - Exercise: The bear poem")
 
+nb_bears = int(input())
+i = 0
+poem1 = "little bear\nWondering what to do"
+poem2 = "Along came another\nThen there were"
+
+for i in range(nb_bears):
+    print(i + 1, poem1)
+    print(poem2, i + 2)
+
+
 
 print_title("End of exercise")
