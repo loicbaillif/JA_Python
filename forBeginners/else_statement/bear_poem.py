@@ -1,5 +1,5 @@
 #  ******** JetBrains Academy - Python for Beginners ********
-#  ****** Math functions: Exercise - The bear poem ******
+#  ****** Else Statement: Exercise - The bear poem ******
 
 # When you were a child, you must have loved poems for kids. Below is one 
 # of them, its idea is the following: one bear thinks over what to do, then 
