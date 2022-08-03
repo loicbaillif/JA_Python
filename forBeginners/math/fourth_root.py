@@ -18,8 +18,16 @@ from print_title import print_title
 print_title("JetBrains Academy - Python for Beginners")
 print_title("Math functions - Exercise: The fourth root")
 
-user_number = float(input())
-print(sqrt(sqrt(user_number)))
+
+def fourth_root(x):
+    if (x >= 0):
+        return sqrt(sqrt(x))
+    else:
+        return "no real solution"
+
+
+user_number = float(input("Please enter a float number"))
+print(fourth_root(user_number))
 
 
 print_title("End of exercise")
