@@ -2,6 +2,7 @@
 #  ****** Math functions: Exercise - Calculating the factorial ******
 
 # Global Python import
+from math import factorial
 
 # Local application imports
 from print_title import print_title
@@ -12,6 +13,8 @@ print_title("Math functions - Exercise: Calculating the factorial")
 # Import the factorial function from the math module  
 # and print the value of the factorial of x.
 
+user_input = int(input())
+print(factorial(user_input))
 
 
 
