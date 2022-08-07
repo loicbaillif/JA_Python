@@ -13,7 +13,11 @@ print_title("Math functions - Exercise: Calculating the factorial")
 # Import the factorial function from the math module  
 # and print the value of the factorial of x.
 
-print(factorial(int(input())))
+def print_factorial(x):
+    print(factorial(x))
+
+user_input = int(input())
+print_factorial(user_input)
 
 
 
