@@ -4,6 +4,7 @@
 # 
 
 # Local application imports
+from asyncio.windows_events import NULL
 from print_title import print_title
 
 print_title("JetBrains Academy - Python for Beginners")
@@ -41,7 +42,7 @@ SHEEP_PRICE = 6769
 ANIMALS_NAMES_SINGULAR = ('None', 'chicken', 'goat', 'pig', 'cow', 'sheep')
 ANIMALS_NAMES_PLURAL = ('None', 'chickens', 'goats', 'pigs', 'cows', 'sheep')
 ANIMALS_PRICES = (CHICKEN_PRICE, GOAT_PRICE, PIG_PRICE, COW_PRICE, SHEEP_PRICE)
-MONEY_TEST = (1, 23, 444, 678, 900, 1296, 3000, 3848, 5000, 6769, 7000, 90000)
+MONEY_TEST = (1, 22, 23, 444, 678, 900, 1296, 3000, 3848, 5000, 6769, 7000, 90000)
 
 
 # Functions
@@ -66,10 +67,19 @@ def provide_singular_plural(quantity, animal_rank):
 
 # Tests
 for test in MONEY_TEST:
-    animal_to_buy = most_useful(test)
-    qty_to_buy = how_many_to_buy(test, ANIMALS_PRICES[animal_to_buy - 1])
-    print(f'{test} allows to buy {qty_to_buy} {provide_singular_plural(qty_to_buy, animal_to_buy)} of them')
+    animal_to_buy_t = most_useful(test)
+    qty_to_buy_t = how_many_to_buy(test, ANIMALS_PRICES[animal_to_buy_t - 1])
+    print(f'{qty_to_buy_t} {provide_singular_plural(qty_to_buy_t, animal_to_buy_t)}' if qty_to_buy_t > 0 else 'None')
 
+
+
+player_money = int(input())
+animal_to_buy = most_useful(player_money)  # Index position
+qty_to_buy = how_many_to_buy(player_money, ANIMALS_PRICES[animal_to_buy - 1])
+
+
+
+print(f'{qty_to_buy} {provide_singular_plural(qty_to_buy, animal_to_buy)}' if qty_to_buy > 0 else 'None')
 
 
 print_title("End of exercise")
