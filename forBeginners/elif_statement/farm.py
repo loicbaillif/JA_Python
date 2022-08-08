@@ -58,11 +58,17 @@ def how_many_to_buy(money, animal_price):
     return int(money/animal_price)
 
 
+def provide_singular_plural(quantity, animal_rank):
+    if quantity > 1:
+        return ANIMALS_NAMES_PLURAL[animal_rank]
+    return ANIMALS_NAMES_SINGULAR[animal_rank]
+
+
 # Tests
 for test in MONEY_TEST:
     animal_to_buy = most_useful(test)
-    print(f'{test} allows to buy {ANIMALS_NAMES_SINGULAR[animal_to_buy]}')
-    print(f'And you can buy {how_many_to_buy(test, ANIMALS_PRICES[animal_to_buy - 1])}')
+    qty_to_buy = how_many_to_buy(test, ANIMALS_PRICES[animal_to_buy - 1])
+    print(f'{test} allows to buy {qty_to_buy} {provide_singular_plural(qty_to_buy, animal_to_buy)} of them')
 
 
 
