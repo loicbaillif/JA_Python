@@ -38,19 +38,24 @@ GOAT_PRICE = 678
 PIG_PRICE = 1296
 COW_PRICE = 3848
 SHEEP_PRICE = 6769
-ANIMAL_NAMES = ('None', 'chicken', 'goat', 'pig', 'cow', 'sheep')
-ANIMALS_PRICES = (0, CHICKEN_PRICE, GOAT_PRICE, PIG_PRICE, COW_PRICE, SHEEP_PRICE)
+ANIMALS_NAMES = ('None', 'chicken', 'goat', 'pig', 'cow', 'sheep')
+ANIMALS_PRICES = (CHICKEN_PRICE, GOAT_PRICE, PIG_PRICE, COW_PRICE, SHEEP_PRICE)
+MONEY_TEST = (1, 23, 100, 678, 900, 1296, 2000, 3848, 5000, 6769, 7000, 9000)
 
 def most_useful(money):
     # for the given money, returns the most expansive animal that can be bought
     rank = 0
     for animal in ANIMALS_PRICES:
-        if money > animal:
+        if money >= animal:
             rank += 1
         else:
             return rank
     return rank  # if money > SHEEP_PRICE
 
+for test in MONEY_TEST:
+    print(f'{test} allows to buy {ANIMALS_NAMES[most_useful(test)]}')
 
+    
+print(most_useful(10))
 
 print_title("End of exercise")
