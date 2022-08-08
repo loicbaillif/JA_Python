@@ -31,3 +31,26 @@ print_title("elif statement: Exercise - The farm")
 # The output format:
 #   How many animals the user can afford, for example, 20 chickens. 
 #   If the user cannot afford any animal, write None.
+
+# Variables
+CHICKEN_PRICE = 23
+GOAT_PRICE = 678
+PIG_PRICE = 1296
+COW_PRICE = 3848
+SHEEP_PRICE = 6769
+ANIMAL_NAMES = ('None', 'chicken', 'goat', 'pig', 'cow', 'sheep')
+ANIMALS_PRICES = (0, CHICKEN_PRICE, GOAT_PRICE, PIG_PRICE, COW_PRICE, SHEEP_PRICE)
+
+def most_useful(money):
+    # for the given money, returns the most expansive animal that can be bought
+    rank = 0
+    for animal in ANIMALS_PRICES:
+        if money > animal:
+            rank += 1
+        else:
+            return rank
+    return rank  # if money > SHEEP_PRICE
+
+
+
+print_title("End of exercise")
