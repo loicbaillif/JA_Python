@@ -52,7 +52,7 @@ def most_useful(money):
     for animal in ANIMALS_PRICES:
         if money >= animal:
             rank += 1
-    return rank  # if money > SHEEP_PRICE
+    return rank  
 
 
 def how_many_to_buy(money, animal_price):
@@ -72,13 +72,10 @@ for test in MONEY_TEST:
     print(f'{qty_to_buy_t} {provide_singular_plural(qty_to_buy_t, animal_to_buy_t)}' if qty_to_buy_t > 0 else 'None')
 
 
-
+# Answer
 player_money = int(input())
 animal_to_buy = most_useful(player_money)  # Index position
 qty_to_buy = how_many_to_buy(player_money, ANIMALS_PRICES[animal_to_buy - 1])
-
-
-
 print(f'{qty_to_buy} {provide_singular_plural(qty_to_buy, animal_to_buy)}' if qty_to_buy > 0 else 'None')
 
 
