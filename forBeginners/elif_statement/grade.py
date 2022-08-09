@@ -26,6 +26,14 @@ print_title("elif statement: Exercise - Grade")
 
 
 
+# Functions
+def convert_score(student_score, max_score):
+    return (student_score * 100) // max_score
+
+
+student_score = int(input())
+max_score = int(input())
+
 # Alternative solution
 student_score_percentage = convert_score(student_score, max_score)
 if student_score_percentage >= 90:
