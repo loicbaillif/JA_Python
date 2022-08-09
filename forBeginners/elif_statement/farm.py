@@ -41,42 +41,26 @@ COW_PRICE = 3848
 SHEEP_PRICE = 6769
 ANIMALS_NAMES_SINGULAR = ('None', 'chicken', 'goat', 'pig', 'cow', 'sheep')
 ANIMALS_NAMES_PLURAL = ('None', 'chickens', 'goats', 'pigs', 'cows', 'sheep')
-ANIMALS_PRICES = (CHICKEN_PRICE, GOAT_PRICE, PIG_PRICE, COW_PRICE, SHEEP_PRICE)
+ANIMALS_PRICES = (SHEEP_PRICE, COW_PRICE, PIG_PRICE, GOAT_PRICE, CHICKEN_PRICE)
 MONEY_TEST = (1, 22, 23, 444, 678, 900, 1296, 3000, 3848, 5000, 6769, 7000, 90000)
 
-
-# Functions
-def most_useful(money):
-    # for the given money, returns the most expansive animal that can be bought
-    rank = 0
-    for animal in ANIMALS_PRICES:
-        if money >= animal:
-            rank += 1
-    return rank  
-
-
-def how_many_to_buy(money, animal_price):
-    return int(money/animal_price)
-
-
-def provide_singular_plural(quantity, animal_rank):
-    if quantity > 1:
-        return ANIMALS_NAMES_PLURAL[animal_rank]
-    return ANIMALS_NAMES_SINGULAR[animal_rank]
-
-
-# Tests
-for test in MONEY_TEST:
-    animal_to_buy_t = most_useful(test)
-    qty_to_buy_t = how_many_to_buy(test, ANIMALS_PRICES[animal_to_buy_t - 1])
-    print(f'{qty_to_buy_t} {provide_singular_plural(qty_to_buy_t, animal_to_buy_t)}' if qty_to_buy_t > 0 else 'None')
-
-
-# Answer
 player_money = int(input())
-animal_to_buy = most_useful(player_money)  # Index position
-qty_to_buy = how_many_to_buy(player_money, ANIMALS_PRICES[animal_to_buy - 1])
-print(f'{qty_to_buy} {provide_singular_plural(qty_to_buy, animal_to_buy)}' if qty_to_buy > 0 else 'None')
+
+if player_money >= SHEEP_PRICE:
+    print(f'{int(player_money / SHEEP_PRICE)} sheep')
+elif player_money >= COW_PRICE:
+    print('1 cow')  # 2 cows are more expansive than one sheep ...
+elif player_money >= PIG_PRICE:
+    nb_pigs = int(player_money / PIG_PRICE)
+    print(f'{nb_pigs} pig', 's' if nb_pigs > 1 else '', sep='')
+elif player_money >= GOAT_PRICE:
+    print('1 goat')
+elif player_money >= CHICKEN_PRICE:
+    nb_chickens = int(player_money / CHICKEN_PRICE)
+    print(f'{nb_chickens} chicken', 's' if nb_chickens > 1 else '', sep='')
+else:
+    print('None')
+
 
 
 print_title("End of exercise")
