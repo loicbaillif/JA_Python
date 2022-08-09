@@ -25,40 +25,19 @@ print_title("elif statement: Exercise - Grade")
 # but the top score 100% is just A.
 
 
-# Variables
-A_GRADE = 90
-B_GRADE = 80
-C_GRADE = 70
-D_GRADE = 60
-F_GRADE = 0
-grades_dict = {
-    'A': A_GRADE, 
-    'B': B_GRADE, 
-    'C': C_GRADE, 
-    'D': D_GRADE, 
-    'F': F_GRADE
-}
 
-# Functions
-def get_grade(student_grade):
-    for x in grades_dict:
-        if student_grade > grades_dict[x]:
-            return x
-
-def convert_score(student_score, max_score):
-    return (student_score * 100) // max_score
-
-
-# Tests
-# grades_test = (100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50)
-# for test in grades_test:
-#     print(get_grade(convert_score(test, 109)))
-
-
-# Solution
-student_score = int(input())
-max_score = int(input())
-print(get_grade(convert_score(student_score, max_score)))
+# Alternative solution
+student_score_percentage = convert_score(student_score, max_score)
+if student_score_percentage >= 90:
+    print('A')
+elif student_score_percentage >= 80:
+    print('B')
+elif student_score_percentage >= 70:
+    print('C')
+elif student_score_percentage >= 60:
+    print('D')
+else:
+    print('F')
 
 
 print_title("End of exercise")
