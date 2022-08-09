@@ -50,9 +50,15 @@ def convert_score(student_score, max_score):
 
 
 # Tests
-grades_test = (100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50)
-for test in grades_test:
-    print(get_grade(convert_score(test, 109)))
+# grades_test = (100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50)
+# for test in grades_test:
+#     print(get_grade(convert_score(test, 109)))
+
+
+# Solution
+student_score = int(input())
+max_score = int(input())
+print(get_grade(convert_score(student_score, max_score)))
 
 
 print_title("End of exercise")
