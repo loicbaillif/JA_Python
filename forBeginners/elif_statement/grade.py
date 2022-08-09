@@ -25,5 +25,31 @@ print_title("elif statement: Exercise - Grade")
 # but the top score 100% is just A.
 
 
+# Variables
+A_GRADE = 90
+B_GRADE = 80
+C_GRADE = 70
+D_GRADE = 60
+F_GRADE = 0
+grades_dict = {
+    'A': A_GRADE, 
+    'B': B_GRADE, 
+    'C': C_GRADE, 
+    'D': D_GRADE, 
+    'F': F_GRADE
+}
+
+# functions
+def get_grade(student_grade):
+    for x in grades_dict:
+        if student_grade > grades_dict[x]:
+            return x
+
+
+# Tests
+grades_test = (100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50)
+for test in grades_test:
+    print(get_grade(test))
+
 
 print_title("End of exercise")
