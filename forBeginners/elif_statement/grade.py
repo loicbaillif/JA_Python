@@ -39,17 +39,20 @@ grades_dict = {
     'F': F_GRADE
 }
 
-# functions
+# Functions
 def get_grade(student_grade):
     for x in grades_dict:
         if student_grade > grades_dict[x]:
             return x
 
+def convert_score(student_score, max_score):
+    return (student_score * 100) // max_score
+
 
 # Tests
 grades_test = (100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50)
 for test in grades_test:
-    print(get_grade(test))
+    print(get_grade(convert_score(test, 109)))
 
 
 print_title("End of exercise")
