@@ -1,6 +1,7 @@
 #  ******** JetBrains Academy - Python for Beginners ********
 #  ****** Load Modules: Exercise - Working with strings ******
 
+# Standard library import
 from string import digits
 from string import ascii_lowercase
 
