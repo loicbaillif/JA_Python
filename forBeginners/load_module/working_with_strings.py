@@ -1,7 +1,8 @@
 #  ******** JetBrains Academy - Python for Beginners ********
 #  ****** Load Modules: Exercise - Working with strings ******
 
- 
+from string import digits
+from string import ascii_lowercase
 
 # Local application imports
 from print_title import print_title
@@ -13,7 +14,8 @@ print_title("Load Modules: Exercise - Working with strings")
 # Print digits in the first line of the output, 
 # and ascii_lowercase # in the second line.
 
-
+print(digits)
+print(ascii_lowercase)
 
 
 
