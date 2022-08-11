@@ -16,5 +16,10 @@ print_title("Declaring a function: Exercise - Fahrenheit")
 # Round the returned result to 3 decimal places.
 
 
+def fahrenheit_to_celsius(temperature):
+    temp_celsius = (temperature - 32) * 5 / 9
+    return round(temp_celsius, 3)
+
+
 
 print_title("End of exercise")
