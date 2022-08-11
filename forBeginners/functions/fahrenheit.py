@@ -20,6 +20,9 @@ def fahrenheit_to_celsius(temperature):
     temp_celsius = (temperature - 32) * 5 / 9
     return round(temp_celsius, 3)
 
+test_list = (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+for temp in test_list:
+    print(f'{temp}°F = {fahrenheit_to_celsius(temp)}°C')
 
 
 print_title("End of exercise")
