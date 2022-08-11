@@ -16,13 +16,19 @@ print_title("Declaring a function: Exercise - Fahrenheit")
 # Round the returned result to 3 decimal places.
 
 
+# Variables
+conversion_precision = 3
+
+
+# Functions
 def fahrenheit_to_celsius(temperature):
     temp_celsius = (temperature - 32) * 5 / 9
-    return round(temp_celsius, 3)
+    return round(temp_celsius, conversion_precision)
 
-test_list = (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
-for temp in test_list:
-    print(f'{temp}°F = {fahrenheit_to_celsius(temp)}°C')
+
+# User input and display result
+temp_fahrenheit = float(input('Please enter a temperature in Fahrenheit:\n> '))
+print(f'{temp_fahrenheit}°F = {fahrenheit_to_celsius(temp_fahrenheit)}°C')
 
 
 print_title("End of exercise")
