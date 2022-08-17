@@ -34,11 +34,9 @@ box = [A, B, C]
 box.sort()
 door = [X, Y]
 door.sort()
-print(f"box: {box}")
-print(f"door: {door}")
 
-if (box[0] <= door[0]):
-    if (box[1] <= door[1]):
+if box[0] <= door[0]:
+    if box[1] <= door[1]:
         print("The box can be carried")
 else:
     print("The box cannot be carried")
