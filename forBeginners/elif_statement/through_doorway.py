@@ -24,15 +24,10 @@ print_title("elif statement: Exercise - Through the doorway")
 # "The box can be carried".
 # If it cannot be carried, output "The box cannot be carried".
 
-A = int(input())
-B = int(input())
-C = int(input())
-X = int(input())
-Y = int(input())
 
-box = [A, B, C]
+box = [int(input()), int(input()), int(input())]
 box.sort()
-door = [X, Y]
+door = [int(input()), int(input())]
 door.sort()
 
 if box[0] <= door[0]:
