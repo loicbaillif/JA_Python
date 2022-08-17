@@ -24,6 +24,25 @@ print_title("elif statement: Exercise - Through the doorway")
 # "The box can be carried".
 # If it cannot be carried, output "The box cannot be carried".
 
+A = int(input())
+B = int(input())
+C = int(input())
+X = int(input())
+Y = int(input())
+
+box = [A, B, C]
+box.sort()
+door = [X, Y]
+door.sort()
+print(f"box: {box}")
+print(f"door: {door}")
+
+if (box[0] <= door[0]):
+    if (box[1] <= door[1]):
+        print("The box can be carried")
+else:
+    print("The box cannot be carried")
+
 
 
 print_title("End of exercise")
