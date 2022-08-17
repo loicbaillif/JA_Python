@@ -30,11 +30,9 @@ box.sort()
 door = [int(input()), int(input())]
 door.sort()
 
-if box[0] <= door[0]:
-    if box[1] <= door[1]:
-        print("The box can be carried")
-else:
-    print("The box cannot be carried")
+addendum = "" if (box[0] <= door[0] and box[1] <= door[1]) else "not"
+
+print(f"The box can{addendum} be carried")
 
 
 
