@@ -13,7 +13,7 @@ print_title("Invoking a function: Exercise - Longest word")
 length_word1 = len(input())
 length_word2 = len(input())
 
-print(length_word1 if (length_word1 > length_word2) else length_word2)
+print(max(length_word1, length_word2))
 
 
 print_title("End of exercise")
