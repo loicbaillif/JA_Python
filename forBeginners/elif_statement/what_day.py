@@ -27,15 +27,9 @@ print_title("elif statement: Exercise - What day is it?")
 # The output format:
 #   The day of the week in that timezone.
 
-offset_value = int(input())
-reference_time = 10.5 
-timezone = reference_time - offset_value
-timezone_day = timezone // 24
-
+reference_time = 10.5  # 10:30 at London
 timezone_day_of_week = ["Tuesday", "Wednesday", "Monday"]
+timezone = reference_time + int(input())
+timezone_day = int(timezone // 24)  # will return -1, 0 or 1
 
 print(timezone_day_of_week[timezone_day])
-
-
-
-print_title("End of exercise")
