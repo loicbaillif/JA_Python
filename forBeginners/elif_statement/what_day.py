@@ -27,7 +27,14 @@ print_title("elif statement: Exercise - What day is it?")
 # The output format:
 #   The day of the week in that timezone.
 
+offset_value = int(input())
 
+if offset_value < -10:
+    print("Monday")
+elif offset_value < 14:
+    print("Tuesday")
+else:
+    print("Wednesday")
 
 
 
