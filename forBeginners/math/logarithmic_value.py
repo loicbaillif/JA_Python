@@ -24,9 +24,7 @@ print_title("Math functions - Exercise: The logarithmic value")
 user_number = int(input())
 user_base = int(input())
 
-if user_base <= 0:
-    result = math.log(user_number)
-elif user_base == 1:
+if user_base <= 0 or user_base == 1:
     result = math.log(user_number)
 else:
     result = math.log(user_number, user_base)
