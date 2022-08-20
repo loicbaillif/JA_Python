@@ -21,8 +21,8 @@ print_title("Math functions - Exercise: The logarithmic value")
 #
 # Print the result rounded to 2 decimal places.
 
-user_number = int(input())
-user_base = int(input())
+user_number = int(input("Please enter a positive integer:\n> "))
+user_base = int(input("Please enter the logarithmic base:\n> "))
 
 if user_base <= 0 or user_base == 1:
     result = math.log(user_number)
