@@ -21,5 +21,17 @@ print_title("Math functions - Exercise: The logarithmic value")
 #
 # Print the result rounded to 2 decimal places.
 
+user_number = int(input())
+user_base = int(input())
+
+if user_base <= 0:
+    result = math.log(user_number)
+elif user_base == 1:
+    result = math.log(user_number)
+else:
+    result = math.log(user_number, user_base)
+
+print(round(result, 2))
+
 
 print_title("End of exercise")
