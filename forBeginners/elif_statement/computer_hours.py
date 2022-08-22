@@ -15,7 +15,7 @@ print_title("elif statement: Exercise - Computer Hours")
 # per day it should output"This seems reasonable". In any other case, 
 # output "Don't forget to take breaks!"
 
-nb_hours = int(input())
+nb_hours = int(input("How long (average) do you spend on a computer per day?\n> "))
 
 if nb_hours < 2:
     print("That's rare nowadays!")
