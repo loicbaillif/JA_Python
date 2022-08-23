@@ -21,3 +21,15 @@ print(separator.center(80)+"\n")
 #       required missing value.
 #       - Finally, output the results for the user.
 
+ask_input1 = "Enter the loan principal:\n"
+ask_input2 = ("What do you want to calculate?\n\ttype 'm' - for number of "
+    "monthly payments\n\ttype 'p' for the monthly payment:\n")
+ask_input3 = ["m", "p"]
+ask_input4 = ["Enter the monthly payment:\n", "Enter the number of months:\n"]
+
+loan_principal = int(input(ask_input1))
+user_choice = input(ask_input2)
+additional_data = int(input(ask_input4[ask_input3.index(user_choice)]))
+
+print(f"additional data = {additional_data}")
+
