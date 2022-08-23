@@ -31,5 +31,20 @@ print_title("elif statement: Exercise - Particles")
 # The output format:
 #   The particle and its class separated by a space.
 
+spin = input()
+electric_charge = input()
+
+if spin == "1":
+    print("Photon Boson")
+else:
+    if electric_charge == "0": 
+        print("Neutrino Lepton")
+    elif electric_charge == "-1":
+        print("Electron Lepton")
+    elif electric_charge == "2/3":
+        print("Charm Quark")
+    else:
+        print("Strange Quark")
+
 
 print_title("End of exercise")
