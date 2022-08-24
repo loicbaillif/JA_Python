@@ -1,6 +1,10 @@
 #  ******** JetBrains Academy - Python for Beginners ********
 #  ****** Loan calculator project - Stage 2 ******
 
+# Global Python library import
+from math import ceil
+
+
 separator = "_"*40
 print(" JetBrains Academy - Python for Beginners ".center(80, "*"))
 print(" Loan calculator project: Stage 1 ".center(80, "*"))
@@ -22,7 +26,7 @@ print(separator.center(80)+"\n")
 #       - Finally, output the results for the user.
 
 
-# Functions
+# FUNCTIONS
 def collect_input_array(invite, range):
     user_input = ""
     while (user_input not in range):
@@ -38,7 +42,14 @@ def collect_int_greater_than(invite, min):
     return user_input
 
 
-# Variables
+def print_string_number_months(principal, monthly):
+    nb_months = ceil(principal / monthly)
+    plural = 's' if (nb_months > 1) else ''
+    print(output_nb_months.format(nb_months = nb_months, plural = plural))
+
+
+
+# VARIABLES
 ask_input1 = "Enter the loan principal:"
 ask_input2 = ("What do you want to calculate?\n\ttype 'm' - for number of "
     "monthly payments\n\ttype 'p' for the monthly payment:\n")
@@ -47,12 +58,17 @@ ask_input4 = {
     "m": "Enter the monthly payment", 
     "p": "Enter the number of months"
 }
+output_nb_months = "It will take {nb_months} month{plural} to repay the loan"
 
 
-# Main program
+# MAIN PROGRAM
 loan_principal = collect_int_greater_than(ask_input1, 0)
 user_choice = collect_input_array(ask_input2, ask_input3)
 additional_data = collect_int_greater_than(ask_input4.get(user_choice), 0)
 
-print(f"additional data = {additional_data}")
+if user_choice == ask_input3[0]:
+    print_string_number_months(loan_principal, additional_data)
+
+
+print(f"additional data = {additional_data}")  # DEBUG: to be deleted
 
