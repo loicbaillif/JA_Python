@@ -21,6 +21,16 @@ print(separator.center(80)+"\n")
 #       required missing value.
 #       - Finally, output the results for the user.
 
+
+# Functions
+def collect_input(invite, range):
+    user_input = ""
+    while (user_input not in range):
+        user_input = input(invite)
+    return user_input
+
+
+# Variables
 ask_input1 = "Enter the loan principal:\n"
 ask_input2 = ("What do you want to calculate?\n\ttype 'm' - for number of "
     "monthly payments\n\ttype 'p' for the monthly payment:\n")
@@ -30,8 +40,10 @@ ask_input4 = {
     "p": "Enter the number of months:\n"
 }
 
+
+# Main program
 loan_principal = int(input(ask_input1))
-user_choice = input(ask_input2)
+user_choice = collect_input(ask_input2, ask_input3)
 additional_data = int(input(ask_input4.get(user_choice)))
 
 print(f"additional data = {additional_data}")
