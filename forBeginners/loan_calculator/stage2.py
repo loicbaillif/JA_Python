@@ -23,28 +23,36 @@ print(separator.center(80)+"\n")
 
 
 # Functions
-def collect_input(invite, range):
+def collect_input_array(invite, range):
     user_input = ""
     while (user_input not in range):
         user_input = input(invite)
     return user_input
 
 
+def collect_int_greater_than(invite, min):
+    # min included in authorized range
+    user_input = min - 1
+    while min > user_input:
+        user_input = int(input(f"{invite} (greater or equal to {min}):\n"))
+    return user_input
+
+
 # Variables
-ask_input1 = "Enter the loan principal:\n"
+ask_input1 = "Enter the loan principal:"
 ask_input2 = ("What do you want to calculate?\n\ttype 'm' - for number of "
     "monthly payments\n\ttype 'p' for the monthly payment:\n")
 ask_input3 = ["m", "p"]
 ask_input4 = {
-    "m": "Enter the monthly payment:\n", 
-    "p": "Enter the number of months:\n"
+    "m": "Enter the monthly payment", 
+    "p": "Enter the number of months"
 }
 
 
 # Main program
-loan_principal = int(input(ask_input1))
-user_choice = collect_input(ask_input2, ask_input3)
-additional_data = int(input(ask_input4.get(user_choice)))
+loan_principal = collect_int_greater_than(ask_input1, 0)
+user_choice = collect_input_array(ask_input2, ask_input3)
+additional_data = collect_int_greater_than(ask_input4.get(user_choice), 0)
 
 print(f"additional data = {additional_data}")
 
