@@ -1,6 +1,8 @@
 #  ******** JetBrains Academy - Python for Beginners ********
 #  ****** elif statement: Exercise - Particles ******
 
+# Global Python library import
+from math import expm1
 
 # Local application imports
 from print_title import print_title
@@ -17,7 +19,8 @@ print_title("Load modules: Exercise - exponent x minus 1")
 # Use the function expm1() defined in the math module. 
 # To do so, read its documentation carefully.
 
-
+x = int(input())
+print(expm1(x))
 
 
 print_title("End of exercise")
