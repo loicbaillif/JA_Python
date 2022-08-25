@@ -19,8 +19,8 @@ print_title("Load modules: Exercise - exponent x minus 1")
 # Use the function expm1() defined in the math module. 
 # To do so, read its documentation carefully.
 
-x = int(input())
-print(expm1(x))
+x = int(input("Please enter an integer"))
+print(f"(e^x) - 1 = {expm1(x)}")
 
 
 print_title("End of exercise")
