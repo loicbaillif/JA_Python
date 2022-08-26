@@ -2,7 +2,7 @@
 #  ****** Math functions: Exercise - Area of a Circle ******
 
 # Global Python import
-import math
+from math import pi
 
 # Local application imports
 from print_title import print_title
@@ -16,6 +16,7 @@ print_title("Math functions - Exercise: Area of a circle")
 #       S= pi * r²
 # Print the result rounded to 2 decimal places.
 
-
+circle_radius = int(input())
+print(round(pi * circle_radius * circle_radius, 2))
 
 print_title("End of exercise")
