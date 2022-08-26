@@ -16,7 +16,11 @@ print_title("Math functions - Exercise: Area of a circle")
 #       S= pi * r²
 # Print the result rounded to 2 decimal places.
 
-circle_radius = int(input())
-print(round(pi * circle_radius * circle_radius, 2))
+
+def circle_area_from_radius(radius):
+    return pi * radius * radius
+
+
+print(round(circle_area_from_radius(int(input())), 2))
 
 print_title("End of exercise")
