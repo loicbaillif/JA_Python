@@ -25,6 +25,11 @@ print_title("String Formatting: Exercise - Beautify both input and output ******
 # user-specific URL. Don't bother about any rules of composing the URLs and 
 # just use raw input to accomplish the task.
 
+user_nickname = input()
+user_profession = input()
+generated_url = f"http://example.com/{user_nickname}/desirable/{user_profession}/profile"
+
+print(generated_url)
 
 
 
