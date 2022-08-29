@@ -6,7 +6,7 @@
 from print_title import print_title
 
 print_title("JetBrains Academy - Python for Beginners")
-print_title("String Formatting: Exercise - Beautify both input and output ******")
+print_title("String Formatting: Exercise - Beautify both input and output")
 
 
 # The output should be user-friendly, but the code part is also important. 
