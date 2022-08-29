@@ -25,8 +25,8 @@ print_title("elif: Exercise - Coordinates")
 # point lying on the axes, with either x = 0 or y = 0, 
 # print "One of the coordinates is equal to zero!".
 
-x_coordinate = float(input())
-y_coordinate = float(input())
+x_coordinate = float(input("Please enter the X coordinate"))
+y_coordinate = float(input("Please enter the Y coordinate"))
 
 if x_coordinate * y_coordinate == 0:
     if x_coordinate == y_coordinate:
