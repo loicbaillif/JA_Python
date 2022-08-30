@@ -19,6 +19,10 @@ print_title("String Formatting: Exercise - Decimal Places")
 # The output format:
 #   A formatted string containing the rounded number.
 
+user_input_float = float(input())
+user_input_precision = int(input())
+
+print(f"{user_input_float:.{user_input_precision}f}")
 
 
 print_title("End of exercise")
