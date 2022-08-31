@@ -19,9 +19,13 @@ print(separator.center(80)+"\n")
 
 
 # VARIABLES
-
+main_menu = """What do you want to calculate?
+type "n" for number of monthly payments, 
+type "a" for annuity monthly payment amount, 
+type "p" for loan principal:
+> """
 
 
 
 # MAIN PROGRAM
-
+user_main_choice = input(main_menu)
