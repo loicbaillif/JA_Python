@@ -14,6 +14,16 @@ print(separator.center(80)+"\n")
 
 
 # FUNCTIONS
+def get_secondary_inputs(user_main_choice):
+    if user_main_choice != "p":
+        p_loan = input(f"Enter the {inputs_dict['p']}\n> ")
+    if user_main_choice != "a":
+        a_loan = input(f"Enter the {inputs_dict['a']}\n> ")
+    if user_main_choice != "n":
+        n_loan = input(f"Enter the {inputs_dict['n']}\n> ")
+    if user_main_choice != "i":
+        i_loan = input(f"Enter the {inputs_dict['i']}\n> ")
+    
 
 
 
@@ -21,11 +31,16 @@ print(separator.center(80)+"\n")
 # VARIABLES
 main_menu = """What do you want to calculate?
 type "n" for number of monthly payments, 
-type "a" for annuity monthly payment amount, 
+type "a" for annuity/monthly payment amount, 
 type "p" for loan principal:
 > """
-
+inputs_dict = {
+    "p": "loan principal", 
+    "a": "monthly payment", 
+    "n": "number of periods", 
+    "i": "loan interest"}
 
 
 # MAIN PROGRAM
 user_main_choice = input(main_menu)
+get_secondary_inputs(user_main_choice)
