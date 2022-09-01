@@ -15,14 +15,11 @@ print_title("Math functions - Exercise: Law of Sines")
 #   - angle B = 35°, angle C = 105°, side b = 7.
 # Find the side c using the math module. Print the answer rounded to 1 decimal place.
 
-# Sines law: a / sin(a) = b / sin(b) = c / sin(c)
-b_angle = 35
-b_side = 7
-c_angle = 105
-sin_b = sin(radians(b_angle))
-sin_c = sin(radians(c_angle))
-c = b_side * sin_c / sin_b
-print(round(c, 1))
+# Sines law: a / sin(a) = b / sin(b) = c / sin(c) ==> c = b * sin(c) / sin(b)
+
+sin_b = sin(radians(35))  # b_angle = 35
+sin_c = sin(radians(105))  # c_angle = 105
+print(round(7 * sin_c / sin_b, 1))
 
 
 print_title("End of exercise")
