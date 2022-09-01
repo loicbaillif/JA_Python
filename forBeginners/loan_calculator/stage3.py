@@ -21,8 +21,7 @@ def get_secondary_inputs(user_main_choice):
         a_loan = input(f"Enter the {inputs_dict['a']}\n> ")
     if user_main_choice != "n":
         n_loan = input(f"Enter the {inputs_dict['n']}\n> ")
-    if user_main_choice != "i":
-        i_loan = input(f"Enter the {inputs_dict['i']}\n> ")
+    i_loan = input(f"Enter the {inputs_dict['i']}\n> ")
     
 
 
