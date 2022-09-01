@@ -2,7 +2,7 @@
 #  ****** Loan calculator project - Stage 3 ******
 
 # Global Python library import
-from math import pow, floor
+from math import pow, ceil
 
 
 separator = "_"*40
@@ -29,6 +29,10 @@ def get_secondary_inputs(user_main_choice):
     i_loan = float(input(f"Enter the {inputs_dict['i']}\n> ")) / 12 / 100
     
 
+def calculate_a():
+    a = p_loan * (i_loan * (1 + i_loan) ** n_loan) 
+    a /= (( 1 + i_loan) ** n_loan - 1)
+    return ceil(a)
 
 
 # VARIABLES
@@ -47,3 +51,4 @@ inputs_dict = {
 # MAIN PROGRAM
 user_main_choice = input(main_menu)
 get_secondary_inputs(user_main_choice)
+print(calculate_a())
