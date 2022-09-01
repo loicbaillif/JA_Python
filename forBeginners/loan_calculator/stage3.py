@@ -15,6 +15,10 @@ print(separator.center(80)+"\n")
 
 # FUNCTIONS
 def get_secondary_inputs(user_main_choice):
+    global p_loan 
+    global a_loan
+    global n_loan
+    global i_loan
     if user_main_choice != "p":
         p_loan = input(f"Enter the {inputs_dict['p']}\n> ")
     if user_main_choice != "a":
