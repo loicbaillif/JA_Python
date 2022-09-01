@@ -2,6 +2,7 @@
 #  ****** Loan calculator project - Stage 3 ******
 
 # Global Python library import
+from math import pow, floor
 
 
 separator = "_"*40
@@ -20,14 +21,13 @@ def get_secondary_inputs(user_main_choice):
     global n_loan
     global i_loan
     if user_main_choice != "p":
-        p_loan = input(f"Enter the {inputs_dict['p']}\n> ")
+        p_loan = float(input(f"Enter the {inputs_dict['p']}\n> "))
     if user_main_choice != "a":
-        a_loan = input(f"Enter the {inputs_dict['a']}\n> ")
+        a_loan = float(input(f"Enter the {inputs_dict['a']}\n> "))
     if user_main_choice != "n":
-        n_loan = input(f"Enter the {inputs_dict['n']}\n> ")
-    i_loan = input(f"Enter the {inputs_dict['i']}\n> ")
+        n_loan = float(input(f"Enter the {inputs_dict['n']}\n> "))
+    i_loan = float(input(f"Enter the {inputs_dict['i']}\n> ")) / 12 / 100
     
-
 
 
 
