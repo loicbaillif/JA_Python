@@ -2,7 +2,7 @@
 #  ****** Loan calculator project - Stage 3 ******
 
 # Global Python library import
-from math import ceil, floor
+from math import ceil, floor, log
 
 
 separator = "_"*40
@@ -35,9 +35,15 @@ def calculate_a():
     return ceil(a)
 
 
+def calculate_n():
+    n = log(a_loan / (a_loan - i_loan * p_loan), 1 + i_loan)
+    return ceil(n)  # Number of months ==> ceil
+
+
 def calculate_p():
     p = a_loan / ((i_loan * (1 + i_loan) ** n_loan) / ((1 + i_loan) ** n_loan - 1))
     return floor(p)
+
 
 # VARIABLES
 main_menu = """What do you want to calculate?
@@ -56,4 +62,5 @@ inputs_dict = {
 user_main_choice = input(main_menu)
 get_secondary_inputs(user_main_choice)
 # print(calculate_a())
-print(calculate_p())
+# print(calculate_p())
+print(calculate_n())
