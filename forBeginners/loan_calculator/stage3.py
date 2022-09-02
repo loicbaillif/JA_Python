@@ -42,7 +42,17 @@ def calculate_n():
 
 def calculate_p():
     p = a_loan / ((i_loan * (1 + i_loan) ** n_loan) / ((1 + i_loan) ** n_loan - 1))
-    return floor(p)
+    return format_years_months(p)
+
+
+def format_years_months(total_months):
+    nb_years = total_months // 12
+    nb_months = total_months % 12
+    f_years = "" if (nb_years == 0) else f"{nb_years} years "
+    f_months = "" if (nb_months % 12 == 0) else f"{nb_months % 12} months "
+    optional_and = "" if (f_years == "" or f_months == "") else "and "
+    return f"It will take {f_years}{optional_and}{f_months}to repay this loan!"
+
 
 
 # VARIABLES
@@ -59,8 +69,11 @@ inputs_dict = {
 
 
 # MAIN PROGRAM
-user_main_choice = input(main_menu)
-get_secondary_inputs(user_main_choice)
+# user_main_choice = input(main_menu)
+# get_secondary_inputs(user_main_choice)
 # print(calculate_a())
 # print(calculate_p())
-print(calculate_n())
+# print(calculate_n())
+test_format_months = [1, 3, 12, 20, 24, 36, 50, 100]
+for x in test_format_months:
+    print(format_years_months(x))
