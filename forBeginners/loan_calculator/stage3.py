@@ -45,13 +45,22 @@ def calculate_p():
     return format_years_months(p)
 
 
+def singular_plural(word, qty):
+    return word if qty < 2 else (word + "s")
+
+
 def format_years_months(total_months):
     nb_years = total_months // 12
     nb_months = total_months % 12
-    f_years = "" if (nb_years == 0) else f"{nb_years} years "
-    f_months = "" if (nb_months % 12 == 0) else f"{nb_months % 12} months "
+    f_years = "" if (nb_years == 0) else ("{} {} ".format(
+        nb_years, singular_plural("year", nb_years)))
+    f_months = "" if (nb_months == 0) else ("{} {} ".format(
+        nb_months, singular_plural("month", nb_months)))
     optional_and = "" if (f_years == "" or f_months == "") else "and "
     return f"It will take {f_years}{optional_and}{f_months}to repay this loan!"
+
+
+
 
 
 
@@ -74,6 +83,6 @@ inputs_dict = {
 # print(calculate_a())
 # print(calculate_p())
 # print(calculate_n())
-test_format_months = [1, 3, 12, 20, 24, 36, 50, 100]
+test_format_months = [1, 3, 12, 13, 20, 24, 36, 49, 100]
 for x in test_format_months:
     print(format_years_months(x))
