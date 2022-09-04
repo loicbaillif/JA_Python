@@ -14,7 +14,7 @@ print(separator.center(80)+"\n")
 # See the project page: https://hyperskill.org/projects/90/stages/502/implement
 
 
-# FUNCTIONS
+# *** FUNCTIONS
 def get_secondary_inputs(user_main_choice):
     global p_loan 
     global a_loan
@@ -32,21 +32,17 @@ def get_secondary_inputs(user_main_choice):
 def calculate_a():
     a = p_loan * (i_loan * (1 + i_loan) ** n_loan) 
     a /= (( 1 + i_loan) ** n_loan - 1)
-    return ceil(a)
+    print(f"Your monthly payment = {ceil(a)}!")
 
 
 def calculate_n():
     n = log(a_loan / (a_loan - i_loan * p_loan), 1 + i_loan)
-    return ceil(n)  # Number of months ==> ceil
+    print(format_years_months(ceil(n)))  # Number of months ==> ceil
 
 
 def calculate_p():
     p = a_loan / ((i_loan * (1 + i_loan) ** n_loan) / ((1 + i_loan) ** n_loan - 1))
-    return format_years_months(p)
-
-
-def singular_plural(word, qty):
-    return word if qty < 2 else (word + "s")
+    print(f"Your loan principal = {floor(p)}!")
 
 
 def format_years_months(total_months):
@@ -60,11 +56,23 @@ def format_years_months(total_months):
     return f"It will take {f_years}{optional_and}{f_months}to repay this loan!"
 
 
+def treat_request(user_choice):
+    if (user_choice == "a"):
+        calculate_a()
+    elif (user_choice == "n"):
+        calculate_n()
+    elif (user_choice == "p"):
+        calculate_p()
+    else:
+        print("This request cannot be treated")
+
+
+def singular_plural(word, qty):
+    return word if qty < 2 else (word + "s")
 
 
 
-
-# VARIABLES
+# *** VARIABLES
 main_menu = """What do you want to calculate?
 type "n" for number of monthly payments, 
 type "a" for annuity/monthly payment amount, 
@@ -77,12 +85,16 @@ inputs_dict = {
     "i": "loan interest"}
 
 
-# MAIN PROGRAM
-# user_main_choice = input(main_menu)
-# get_secondary_inputs(user_main_choice)
+# *** MAIN PROGRAM
+user_main_choice = input(main_menu)
+get_secondary_inputs(user_main_choice)
+treat_request(user_main_choice)
+
+
+# TETS
 # print(calculate_a())
 # print(calculate_p())
 # print(calculate_n())
-test_format_months = [1, 3, 12, 13, 20, 24, 36, 49, 100]
-for x in test_format_months:
-    print(format_years_months(x))
+# test_format_months = [1, 3, 12, 13, 20, 24, 36, 49, 100]
+# for x in test_format_months:
+#     print(format_years_months(x))
