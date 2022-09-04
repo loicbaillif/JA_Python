@@ -20,4 +20,15 @@ for letter in "Superbus":
     print(letter)
 
 
+print_subtitle("range function")
+for i in range(5):
+    print(f"Counting ... {i}")
+
+for i in range(7, 100, 15):
+    print(f"Counting from 7 to 100 by steps of 15: {i}")
+
+for _ in range(10):
+    print("**********")
+
+
 print_title("End of chapter")
