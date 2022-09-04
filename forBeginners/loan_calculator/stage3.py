@@ -57,11 +57,11 @@ def format_years_months(total_months):
 
 
 def treat_request(user_choice):
-    if (user_choice == "a"):
+    if user_choice == "a":
         calculate_a()
-    elif (user_choice == "n"):
+    elif user_choice == "n":
         calculate_n()
-    elif (user_choice == "p"):
+    elif user_choice == "p":
         calculate_p()
     else:
         print("This request cannot be treated")
@@ -86,12 +86,15 @@ inputs_dict = {
 
 
 # *** MAIN PROGRAM
-user_main_choice = input(main_menu)
+user_main_choice = "dummy"
+while user_main_choice not in ["n", "a", "p"]:
+    print("Invalid input, please try again")
+    user_main_choice = input(main_menu)
 get_secondary_inputs(user_main_choice)
 treat_request(user_main_choice)
 
 
-# TETS
+# TESTS
 # print(calculate_a())
 # print(calculate_p())
 # print(calculate_n())
