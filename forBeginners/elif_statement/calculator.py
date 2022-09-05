@@ -20,5 +20,13 @@ print_title("elif statement: Exercise - Calculator")
 #
 # Operations are: +, -, /, *, mod, pow, div.
 
+first_number = float(input())
+second_number = float(input())
+operation = input()
+
+if operation.isalpha():
+    print("mod, pow or div requested")
+else:
+    print("+, -, * or / requested")
 
 print_title("End of exercise")
