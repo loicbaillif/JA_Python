@@ -20,12 +20,20 @@ print_title("elif statement: Exercise - Calculator")
 #
 # Operations are: +, -, /, *, mod, pow, div.
 
+# VARIABLES
 first_number = float(input())
 second_number = float(input())
 operation = input()
+forbidden_division = "Division by 0!"
 
 if operation.isalpha():
-    print("mod, pow or div requested")
+    if operation == "mod":
+        print(forbidden_division if (second_number == 0.0) else (first_number % second_number))
+    elif operation == "pow":
+        print(first_number ** second_number)
+    else:
+        # We don't consider input errors yet, so this must be "div"
+        print(forbidden_division if (second_number == 0.0) else (first_number // second_number))
 else:
     print("+, -, * or / requested")
 
