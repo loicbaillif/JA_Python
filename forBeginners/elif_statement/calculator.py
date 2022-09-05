@@ -36,5 +36,13 @@ if operation.isalpha():
         print(forbidden_division if (second_number == 0.0) else (first_number // second_number))
 else:
     print("+, -, * or / requested")
+    if operation == "+":
+        print(first_number + second_number)
+    elif operation == "-":
+        print(first_number - second_number)
+    elif operation == "*":
+        print(first_number * second_number)
+    else:
+        print(forbidden_division if (second_number == 0.0) else (first_number / second_number)) 
 
 print_title("End of exercise")
