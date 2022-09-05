@@ -27,8 +27,19 @@ for i in range(5):
 for i in range(7, 100, 15):
     print(f"Counting from 7 to 100 by steps of 15: {i}")
 
-for _ in range(10):
-    print("**********")
+for _ in range(3):
+    print(">_</\<_>")
+
+
+print_subtitle("Input data processing")
+user_word = input()
+for letter in user_word:
+    print(letter)
+
+nb_reps = int(input("How many guests do we have?"))
+for _ in range(nb_reps):
+    print("Welcome! Be my guest.")
+
 
 
 print_title("End of chapter")
