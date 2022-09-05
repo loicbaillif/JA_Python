@@ -48,7 +48,14 @@ for first_name in first_names:
     for last_name in last_names:
         print(first_name + " " + last_name)
 
-
+table_height = int(input("Enter the table height:\n"))
+table_width = int(input("Enter the table width:\n"))
+print("_" * (6 * table_width + 1))
+for i in range(table_height):
+    for j in range(table_width):
+        print(f"| {i};{j} ", end='')
+    print("|")
+print("_" * (6 * table_width + 1))
 
 
 print_title("End of chapter")
