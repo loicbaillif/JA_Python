@@ -41,5 +41,14 @@ for _ in range(nb_reps):
     print("Welcome! Be my guest.")
 
 
+print_subtitle("Nested loops")
+first_names = ["Andy", "Betty"]
+last_names = ["Alpha", "Bravo"]
+for first_name in first_names:
+    for last_name in last_names:
+        print(first_name + " " + last_name)
+
+
+
 
 print_title("End of chapter")
