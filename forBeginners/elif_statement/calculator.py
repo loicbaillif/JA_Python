@@ -21,28 +21,31 @@ print_title("elif statement: Exercise - Calculator")
 # Operations are: +, -, /, *, mod, pow, div.
 
 # VARIABLES
-first_number = float(input())
-second_number = float(input())
-operation = input()
+first_number = float(input("Please enter the first number:\n> "))
+second_number = float(input("Please enter the second number:\n> "))
+operation = input("Please enter the operation:\n> ")
 forbidden_division = "Division by 0!"
+result = f"Result:\n\t{first_number} {operation} {second_number} = "
 
 if operation.isalpha():
     if operation == "mod":
-        print(forbidden_division if (second_number == 0.0) else (first_number % second_number))
+        result += str(forbidden_division if (second_number == 0) else (first_number % second_number))
     elif operation == "pow":
-        print(first_number ** second_number)
+        result += str(first_number ** second_number)
     else:
         # We don't consider input errors yet, so this must be "div"
-        print(forbidden_division if (second_number == 0.0) else (first_number // second_number))
+        result += str(forbidden_division if (second_number == 0) else (first_number // second_number))
 else:
     print("+, -, * or / requested")
     if operation == "+":
-        print(first_number + second_number)
+        result += str(first_number + second_number)
     elif operation == "-":
-        print(first_number - second_number)
+        result += str(first_number - second_number)
     elif operation == "*":
-        print(first_number * second_number)
+        result += str(first_number * second_number)
     else:
-        print(forbidden_division if (second_number == 0.0) else (first_number / second_number)) 
+        result += str(forbidden_division if (second_number == 0) else (first_number / second_number)) 
+
+print(result)
 
 print_title("End of exercise")
