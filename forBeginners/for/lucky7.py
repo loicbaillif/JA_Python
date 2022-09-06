@@ -16,6 +16,15 @@ print_title("for loop: Exercise - Lucky 7")
 # Note that you don't need to perform any calculations 
 # on the first input (the n).
 
+nb_elements = int(input())
+result_list = []
+for element in range(nb_elements):
+    user_input = int(input())
+    if user_input % 7 == 0:
+        result_list.append(user_input ** 2)
+
+for elt in result_list:
+    print(elt)
 
 
 print_title("End of exercise")
