@@ -16,10 +16,10 @@ print_title("for loop: Exercise - Lucky 7")
 # Note that you don't need to perform any calculations 
 # on the first input (the n).
 
-nb_elements = int(input())
+nb_elements = int(input("How many elements will be treated?\n> "))
 result_list = []
 for element in range(nb_elements):
-    user_input = int(input())
+    user_input = int(input(f"Please enter element n°{element + 1}:\n> "))
     if user_input % 7 == 0:
         result_list.append(user_input ** 2)
 
