@@ -16,7 +16,19 @@ print_title("for loop: Exercise - Lucky 7")
 # Note that you don't need to perform any calculations 
 # on the first input (the n).
 
-nb_elements = int(input("How many elements will be treated?\n> "))
+while True:
+    try:
+        nb_elements = int(input("How many elements will be treated?\n> "))
+        if nb_elements > 0:
+            break
+        else:
+            print("Positive integer value expected")
+    except ValueError:
+        print("Positive integer value expected")
+        continue
+
+
+nb_elements = int(nb_elements)
 result_list = []
 for element in range(nb_elements):
     user_input = int(input(f"Please enter element n°{element + 1}:\n> "))
