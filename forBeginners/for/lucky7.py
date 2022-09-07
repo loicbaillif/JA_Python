@@ -28,10 +28,16 @@ while True:
         continue
 
 
-nb_elements = int(nb_elements)
 result_list = []
+
 for element in range(nb_elements):
-    user_input = int(input(f"Please enter element n°{element + 1}:\n> "))
+    while True:
+        try:
+            user_input = int(input(f"Please enter element n°{element + 1}"))
+            break
+        except ValueError:
+            print("Integer value expected please.")
+            continue
     if user_input % 7 == 0:
         result_list.append(user_input ** 2)
 
