@@ -33,7 +33,7 @@ result_list = []
 for element in range(nb_elements):
     while True:
         try:
-            user_input = int(input(f"Please enter element n°{element + 1}"))
+            user_input = int(input(f"Please enter element n°{element + 1}:\n> "))
             break
         except ValueError:
             print("Integer value expected please.")
