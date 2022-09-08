@@ -22,6 +22,10 @@ var2 = "123"
 print(f"var2 = ${var2}")
 print(f"var2 + 10 ==> Type Error")
 
+print_subtitle("Explicit type casting")
+age = int(input())  # Dynamic type casting
+print(f"type(age) = {type(age)}")
+print(f"type(string(age)) = {type(str(age))}")
 
 
 print_title("End of chapter")
