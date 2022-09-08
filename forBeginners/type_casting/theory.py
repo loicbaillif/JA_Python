@@ -11,6 +11,11 @@ from print_title import print_subtitle
 print_title("JetBrains Academy - Python for Beginners")
 print_title("Type Casting")
 
+print_subtitle("Dynamic typing")
+var1 = 10
+print(f"var1 = 10 ==>\nprint(var1): {var1}")
+var1 = "rainbow"
+print(f"var1 = 'rainbow' ==>\nprint(var1): ${var1}")
 
 
 
