@@ -14,5 +14,13 @@ print_title("for loop: Exercise - Vowels count")
 # vowel sounds. Write a program that counts the number of vowels in the 
 # variable string and prints this number.
 
+vowels = "aeiou"  # 'y' not considered as a vowel in english
+user_string = input()
+nb_vowels = 0
+
+for letter in user_string:
+    nb_vowels += letter in vowels
+
+print(nb_vowels)
 
 print_title("End of exercise")
