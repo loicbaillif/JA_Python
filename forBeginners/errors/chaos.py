@@ -14,7 +14,7 @@ print_title("Errors: Exercise - Chaos")
 # the resulting number of the calculation and the second line should print 
 # the word mathematics.
 
-print("45/9 + 16*(5 + 8)")
-print(mathematics)
+print(45/9 + 16*(5 + 8))
+print("mathematics")
 
 print_title("End of exercise")
