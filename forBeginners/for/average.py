@@ -14,6 +14,17 @@ print_title("for loop: Exercise - Average of all numbers")
 # it shows the mean of all numbers that lie on the interval between 
 # a and b (included), and are divisible by 3.
 
+sum_elements = 0
+nb_elements = 0
 
+a = int(input())
+b = int(input())
+
+for i in range(a, b + 1):
+    if (i % 3 == 0):
+        sum_elements += i
+        nb_elements += 1
+
+print(sum_elements / nb_elements)
 
 print_title("End of exercise")
