@@ -21,9 +21,11 @@ print_title("Errors: Exercise - English Contractions")
 # Each string should be on a new line. This will be easy 
 # if you use quotes wisely.
 
-print("I am = I'm")
-print("I have = I've")
-print("I will = I'll")
-print("I had / would = I'd")
+contractions = """I am = I'm
+I have = I've
+I will = I'll
+I had / would = I'd"""
+
+print(contractions)
 
 print_title("End of exercise")
