@@ -11,9 +11,10 @@ print_title("String Formatting: Exercise - How long is that word?")
 
 # https://hyperskill.org/learn/step/6896
 # Write a program that calculates the length of a word from the input and 
-# prints it out together with the word in the format word has N letters. 
+# prints it out together with the word in the format *word* has *N* letters. 
 # There will always be more than one letter in the word.
 
-
+user_word = input()
+print(f"{user_word} has {len(user_word)} letters")
 
 print_title("End of exercise")
