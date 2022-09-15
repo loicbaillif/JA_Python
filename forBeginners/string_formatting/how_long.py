@@ -15,6 +15,7 @@ print_title("String Formatting: Exercise - How long is that word?")
 # There will always be more than one letter in the word.
 
 user_word = input()
-print(f"{user_word} has {len(user_word)} letters")
+word_length = len(user_word)
+print(f"{user_word} has {word_length} letters")
 
 print_title("End of exercise")
