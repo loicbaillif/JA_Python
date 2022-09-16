@@ -27,6 +27,13 @@ print_title("elif statement: Exercise - Calculator")
 # The output format:
 #   The type of language.
 
+index_synthesis = float(input())
+if index_synthesis < 2:
+    print("Analytic")
+elif index_synthesis <= 3:
+    print("Synthetic")
+else:
+    print("Polysynthetic")
 
 
 print_title("End of exercise")
