@@ -1,2 +1,6 @@
 # Python cache files #
 *.pyc
+*.iml
+forBeginners/.idea/
+forBeginners/.idea/misc.xml
+forBeginners/.idea/forBeginners.iml
