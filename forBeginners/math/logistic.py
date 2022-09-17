@@ -18,9 +18,9 @@ print_title("Math functions: Exercise - Logistic functions")
 #
 # Print the result rounded to 2 decimal places.
 
-user_input = int(input())
+user_input = int(input("Please enter an integer:\n> "))
 logistic_user_input = exp(user_input) / (exp(user_input) + 1)
-print(round(logistic_user_input, 2))
+print(f"sigma({user_input}) = {round(logistic_user_input, 2)}")
 
 
 print_title("End of exercise")
