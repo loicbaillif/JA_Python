@@ -4,3 +4,5 @@
 forBeginners/.idea/
 forBeginners/.idea/misc.xml
 forBeginners/.idea/forBeginners.iml
+*.iml
+*.xml
