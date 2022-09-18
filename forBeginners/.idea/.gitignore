@@ -6,3 +6,9 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# Python cache files #
+*.pyc
+*.iml
+forBeginners/.idea/
+forBeginners/.idea/misc.xml
+forBeginners/.idea/forBeginners.iml
