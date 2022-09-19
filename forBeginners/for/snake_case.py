@@ -26,10 +26,9 @@ user_phrase = input()
 
 # Variables
 phrase_in_snake_case = ""
-upper_cases = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 for letter in user_phrase:
-    if letter in upper_cases:
+    if letter.isupper():
         phrase_in_snake_case += "_"
         phrase_in_snake_case += letter.lower()
     else: 
