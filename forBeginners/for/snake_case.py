@@ -22,6 +22,19 @@ print_title("for loop: Exercise - snake_case")
 # The output format:
 #   Print out words in lowercase and separate them by underscores.
 
+user_phrase = input()
 
+# Variables
+phrase_in_snake_case = ""
+upper_cases = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+for letter in user_phrase:
+    if letter in upper_cases:
+        phrase_in_snake_case += "_"
+        phrase_in_snake_case += letter.lower()
+    else: 
+        phrase_in_snake_case += letter
+
+print(phrase_in_snake_case)
 
 print_title("End of exercise")
