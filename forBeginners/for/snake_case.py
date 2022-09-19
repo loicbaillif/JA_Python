@@ -28,11 +28,13 @@ user_phrase = input()
 phrase_in_snake_case = ""
 
 for letter in user_phrase:
-    if letter.isupper():
-        phrase_in_snake_case += "_"
-        phrase_in_snake_case += letter.lower()
-    else: 
-        phrase_in_snake_case += letter
+    phrase_in_snake_case += ("_" + letter.lower()) if letter.isupper() else letter
+
+    # if letter.isupper():
+    #     phrase_in_snake_case += "_"
+    #     phrase_in_snake_case += letter.lower()
+    # else: 
+    #     phrase_in_snake_case += letter
 
 print(phrase_in_snake_case)
 
