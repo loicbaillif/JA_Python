@@ -25,17 +25,11 @@ print_title("for loop: Exercise - snake_case")
 user_phrase = input()
 
 # Variables
-phrase_in_snake_case = ""
+camel_to_snake = ""
 
 for letter in user_phrase:
-    phrase_in_snake_case += ("_" + letter.lower()) if letter.isupper() else letter
+    camel_to_snake += ("_" + letter.lower()) if letter.isupper() else letter
 
-    # if letter.isupper():
-    #     phrase_in_snake_case += "_"
-    #     phrase_in_snake_case += letter.lower()
-    # else: 
-    #     phrase_in_snake_case += letter
-
-print(phrase_in_snake_case)
+print(camel_to_snake)
 
 print_title("End of exercise")
