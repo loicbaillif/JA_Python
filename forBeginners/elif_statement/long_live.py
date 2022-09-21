@@ -22,7 +22,17 @@ print_title("elif statement: Exercise - Long live the king")
 # only 3 moves (right, down, diagonally).
 
 
+x_king = int(input())
+y_king = int(input())
 
+if (x_king > 1 and x_king < 8) and (y_king > 1 and y_king < 8):
+    print(8)
+elif (x_king == 1 or x_king == 8) and (y_king > 1 and y_king < 8):
+    print(5)
+elif (x_king > 1 and x_king < 8) and (y_king == 1 or y_king == 8):
+    print(5)
+else:
+    print(3)
 
 
 print_title("End of exercise")
