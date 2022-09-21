@@ -27,9 +27,9 @@ y_king = int(input())
 
 if (1 < x_king < 8) and (1 < y_king < 8):
     print(8)
-elif (x_king == 1 or x_king == 8) and (1 < y_king < 8):
+elif (x_king in (1, 8)) and (1 < y_king < 8):
     print(5)
-elif (1 < x_king < 8) and (y_king == 1 or y_king == 8):
+elif (1 < x_king < 8) and (y_king in (1, 8)):
     print(5)
 else:
     print(3)
