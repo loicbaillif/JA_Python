@@ -14,6 +14,10 @@ print_title("for loop: Exercise - Speech generation")
 # consist solely of digits. Print the name of each digit on a new line for 
 # the system to read them one by one.
 
+digits_words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
+number = input()
+for digit in number:
+    print(digits_words[int(digit)])
 
 print_title("End of exercise")
