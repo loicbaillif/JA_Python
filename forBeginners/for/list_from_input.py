@@ -16,9 +16,8 @@ print_title("for loop: Exercise - List from input")
 # should contain. The numbers after it are the elements that you need 
 # to append to your list.
 
-nb_elements = int(input())
 list_elements = []
-for _ in range(nb_elements):
+for _ in range(int(input())):
     list_elements.append(int(input()))
 
 print(list_elements)
