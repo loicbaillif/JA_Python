@@ -21,6 +21,6 @@ print_title("Type casting: Exercise - Lexical Reduplication")
 # The spelling rules vary across the globe, so do not separate the halves.
 
 word = input()
-print(2 * word)
+print(word + word)
 
 print_title("End of exercise")
