@@ -20,6 +20,7 @@ print_title("Type casting: Exercise - Lexical Reduplication")
 # the mechanism we want you to implement. Print a word exactly 2 times. 
 # The spelling rules vary across the globe, so do not separate the halves.
 
-
+word = input()
+print(word, word, sep="")
 
 print_title("End of exercise")
