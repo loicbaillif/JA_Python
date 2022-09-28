@@ -43,6 +43,6 @@ def get_tax_rate(income):
 
 
 income = int(input())
-print(f"income = {income} ==> tax rate = {get_tax_rate(income)}%")
+print(f"the tax for {income} is {get_tax_rate(income)}%. That is {round(get_tax_rate(income) * income / 100)} dollars!")
 
 print_title("End of exercise")
