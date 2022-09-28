@@ -31,18 +31,19 @@ print_title("String Formatting: Exercise - Tax brackets")
 # Round your calculated_tax to the nearest integer.
 
 
-def get_tax_rate(income):
-    tax_rate = 0
-    if income > 132406:
-        tax_rate = 28
-    elif income > 42707:
-        tax_rate = 25
-    elif income > 15527:
-        tax_rate = 15
-    return tax_rate
+def get_tax_rate(revenues):
+    rate = 0
+    if revenues > 132406:
+        rate = 28
+    elif revenues > 42707:
+        rate = 25
+    elif revenues > 15527:
+        rate = 15
+    return rate
 
 
 income = int(input())
-print(f"the tax for {income} is {get_tax_rate(income)}%. That is {round(get_tax_rate(income) * income / 100)} dollars!")
+tax_rate = get_tax_rate(income)
+print(f"The tax for {income} is {tax_rate}%. That is {round(tax_rate * income / 100)} dollars!")
 
 print_title("End of exercise")
