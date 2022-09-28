@@ -30,20 +30,19 @@ print_title("String Formatting: Exercise - Tax brackets")
 # 
 # Round your calculated_tax to the nearest integer.
 
-tier_1_revenues = 15527
-tier_2_revenues = 42707
-tier_3_revenues = 132406
+tier_1 = [15527, 15]  # [amount, rate]
+tier_2 = [42707, 25]
+tier_3 = [132406, 28]
 
 
 def get_tax_rate(revenues):
-    if revenues > tier_3_revenues:
-        return 28
-    elif revenues > tier_2_revenues:
-        return 25
-    elif revenues > tier_1_revenues:
-        return 15
-    else:
-        return 0
+    if revenues > tier_3[0]:
+        return tier_3[1]
+    elif revenues > tier_2[0]:
+        return tier_2[1]
+    elif revenues > tier_1[0]:
+        return tier_1[1]
+    return 0
 
 
 income = int(input())
