@@ -2,7 +2,7 @@
 #  ****** Math functions: Exercise - Octahedron ******
 
 # Global Python import
-from math import exp
+from math import sqrt
 
 # Local application imports
 from print_title import print_title
@@ -27,6 +27,11 @@ print_title("Math functions: Exercise - Octahedron")
 #   (1/3) * sqrt{2} * a ^ 3
 
 
+octahedron_edge = int(input())
+octahedron_area = round(2 * sqrt(3) * octahedron_edge ** 2, 2)
+octahedron_volume = round(sqrt(2) * octahedron_edge ** 3 / 3, 2)
+
+print(octahedron_area, octahedron_volume)
 
 
 print_title("End of exercise")
