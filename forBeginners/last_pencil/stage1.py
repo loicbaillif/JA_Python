@@ -4,4 +4,4 @@
 # https://hyperskill.org/projects/258/stages/1302/implement
 
 print('|' * 10)
-
+print('Your turn!')
