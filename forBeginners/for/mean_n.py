@@ -10,12 +10,12 @@ print_title("for loop: Exercise - A mean of n")
 
 # Variables
 nb_elements = int(input())
-sum = 0
+elements_sum = 0
 
-for _ in range(nb_elements):
-    sum += int(input())
+for _ in range(int(input())):
+    elements_sum += int(input())
 
-print(sum/nb_elements)
+print(elements_sum / nb_elements)
 
 
 print_title("End of exercise")
