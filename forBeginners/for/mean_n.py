@@ -12,6 +12,8 @@ print_title("for loop: Exercise - A mean of n")
 nb_elements = int(input())
 sum = 0
 
+for _ in range(nb_elements):
+    sum += int(input)
 
 
 print_title("End of exercise")
