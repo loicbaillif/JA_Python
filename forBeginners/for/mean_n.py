@@ -13,7 +13,9 @@ nb_elements = int(input())
 sum = 0
 
 for _ in range(nb_elements):
-    sum += int(input)
+    sum += int(input())
+
+print(sum/nb_elements)
 
 
 print_title("End of exercise")
