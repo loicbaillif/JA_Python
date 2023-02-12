@@ -8,6 +8,10 @@ from print_title import print_title
 print_title("JetBrains Academy - Python for Beginners")
 print_title("for loop: Exercise - A mean of n")
 
+# Variables
+nb_elements = int(input())
+sum = 0
+
 
 
 print_title("End of exercise")
