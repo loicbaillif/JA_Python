@@ -8,20 +8,6 @@ from print_title import print_title
 print_title("JetBrains Academy - Python for Beginners")
 print_title("Simple Programs: Exercise - A week")
 
-print("""
-Sunday
-
-Monday
-
-Tuesday
-
-Wednesday
-
-Thursday
-
-Friday
-
-Saturday
-""")
+print("Sunday\n\nMonday\n\nTuesday\n\nWednesday\n\nThursday\n\nFriday\n\nSaturday")
 
 print_title("End of exercise")
