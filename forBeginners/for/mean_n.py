@@ -12,7 +12,7 @@ print_title("for loop: Exercise - A mean of n")
 nb_elements = int(input())
 elements_sum = 0
 
-for _ in range(int(input())):
+for _ in range(nb_elements):
     elements_sum += int(input())
 
 print(elements_sum / nb_elements)
