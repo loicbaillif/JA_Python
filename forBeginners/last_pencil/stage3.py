@@ -10,3 +10,8 @@ index_first_player = list_players.index(first_player)
 
 
 print('|' * nb_pencils)
+
+
+def play_round():
+    pick = int(input(f"{list_players[round + index_first_player]}'s turn:\n"))
+    return pick
