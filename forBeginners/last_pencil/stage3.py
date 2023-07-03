@@ -5,5 +5,6 @@
 nb_pencils = int(input("How many pencils would you like to use:\n"))
 first_player = input("Who will be the first (Davy, Jones):\n")
 list_players = ["Davy", "Jones"]
+round = 0
 
 print('|' * nb_pencils)
