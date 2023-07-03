@@ -6,3 +6,4 @@ nb_pencils = int(input("How many pencils would you like to use:\n"))
 first_player = input("Who will be the first (Davy, Jones):\n")
 
 print('|' * nb_pencils)
+print(f"{first_player} is going first")
