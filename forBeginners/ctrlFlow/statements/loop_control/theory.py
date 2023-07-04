@@ -34,5 +34,9 @@ for pet in pets:
         continue
     print(f"\t. {pet}")
 
+for pet in pets:
+    if pet != "dog":
+        print(pet)
+
 
 print("\n***** End of theory *****")
