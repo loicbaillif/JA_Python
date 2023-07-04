@@ -19,5 +19,13 @@ while True:
     if count == 11:
         break
 
+numbers = [1, 2, 3, 4]
+for elt in numbers:
+    if elt == 5:
+        print("I've got 5 on it")
+        break
+else:
+    print("5 was not listed")
+
 
 print("\n***** End of theory *****")
