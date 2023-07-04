@@ -28,4 +28,11 @@ else:
     print("5 was not listed")
 
 
+print("\n*** 2) continue")
+for pet in pets:
+    if pet == "cat":
+        continue
+    print(f"\t. {pet}")
+
+
 print("\n***** End of theory *****")
