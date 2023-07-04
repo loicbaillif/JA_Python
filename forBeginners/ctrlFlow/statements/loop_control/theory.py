@@ -39,4 +39,9 @@ for pet in pets:
         print(pet)
 
 
+print("\n*** 3) pass")
+while True:
+    pass
+
+
 print("\n***** End of theory *****")
