@@ -12,5 +12,12 @@ for pet in pets:
         print("Loop break")
         break
 
+count = 0
+while True:
+    print(f"I am infinite loop ... iteration {count}")
+    count += 1
+    if count == 11:
+        break
+
 
 print("\n***** End of theory *****")
